@@ -28,36 +28,37 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-
 .cart-icon:hover{transform:scale(1.1)}
 .cart-icon i{font-size:1.3rem;color:var(--primary)}
 .cart-count{position:absolute;top:-2px;right:-2px;background:var(--danger);color:var(--white);font-size:0.7rem;font-weight:700;width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center}
-.hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding-top:0}
-.hero-bg{position:absolute;top:0;right:0;width:55%;height:100%;background:linear-gradient(135deg,rgba(139,105,20,0.05) 0%,rgba(212,168,75,0.1) 100%);border-radius:0 0 0 100px;z-index:-1}
-.hero-container{max-width:1200px;margin:0 auto;padding:80px 2rem 0;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;height:100vh}
-.hero-content{max-width:600px}
-.hero-badge{display:inline-flex;align-items:center;gap:0.5rem;background:rgba(139,105,20,0.1);color:var(--primary);padding:0.5rem 1rem;border-radius:50px;font-size:0.9rem;font-weight:600;margin-bottom:1.5rem}
-.hero-title{font-size:3.5rem;font-weight:800;line-height:1.1;margin-bottom:1.5rem;color:var(--text)}
-.hero-title span{color:var(--primary);display:block}
-.hero-subtitle{font-size:1.1rem;color:var(--text-light);margin-bottom:2rem;line-height:1.8}
+.hero{position:relative;width:100%;height:100vh;overflow:hidden}
+.hero-slider{position:absolute;top:0;left:0;width:100%;height:100%;z-index:1}
+.hero-slider .slide{position:absolute;top:0;left:0;width:100%;height:100%;opacity:0;transition:opacity 1.5s ease-in-out;background-size:cover;background-position:center;background-repeat:no-repeat;z-index:1}
+.hero-slider .slide.active{opacity:1;z-index:2}
+.hero-slider .slide::after{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(to right,rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.4) 50%,rgba(0,0,0,0.2) 100%);z-index:1}
+.slide-content{position:absolute;bottom:40px;left:40px;z-index:10;color:white;max-width:400px}
+.slide-content h3{font-size:2rem;font-weight:700;margin-bottom:0.5rem;text-shadow:0 2px 10px rgba(0,0,0,0.3)}
+.slide-content p{font-size:1.1rem;opacity:0.9;text-shadow:0 1px 5px rgba(0,0,0,0.3)}
+.hero-overlay{position:absolute;top:0;left:0;width:100%;height:100%;z-index:5;display:flex;align-items:center;pointer-events:none}
+.hero-overlay .hero-container{max-width:1200px;margin:0 auto;padding:0 2rem;width:100%}
+.hero-content{max-width:600px;color:white;position:relative;z-index:10}
+.hero-badge{display:inline-flex;align-items:center;gap:0.5rem;background:rgba(255,255,255,0.15);color:white;padding:0.5rem 1rem;border-radius:50px;font-size:0.9rem;font-weight:600;margin-bottom:1.5rem;backdrop-filter:blur(10px)}
+.hero-title{font-size:3.5rem;font-weight:800;line-height:1.1;margin-bottom:1.5rem;color:white;text-shadow:0 2px 20px rgba(0,0,0,0.3)}
+.hero-title span{color:var(--primary-light);display:block}
+.hero-subtitle{font-size:1.1rem;color:rgba(255,255,255,0.9);margin-bottom:2rem;line-height:1.8;text-shadow:0 1px 5px rgba(0,0,0,0.2)}
 .hero-buttons{display:flex;gap:1rem;flex-wrap:wrap}
 .btn-primary{background:var(--primary);color:var(--white);padding:1rem 2rem;border-radius:50px;text-decoration:none;font-weight:600;display:inline-flex;align-items:center;gap:0.5rem;transition:all 0.3s;border:none;cursor:pointer;font-size:1rem}
 .btn-primary:hover{background:var(--accent);transform:translateY(-3px);box-shadow:0 10px 30px rgba(139,105,20,0.3)}
-.btn-outline{border:2px solid var(--primary);color:var(--primary);padding:1rem 2rem;border-radius:50px;text-decoration:none;font-weight:600;display:inline-flex;align-items:center;gap:0.5rem;transition:all 0.3s;background:transparent}
-.btn-outline:hover{background:var(--primary);color:var(--white);transform:translateY(-3px)}
-.hero-image{position:relative;height:100vh;width:100%}
-.hero-slider{position:relative;width:100%;height:100vh;border-radius:0;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.15);background-color:#f0ebe5}
-.hero-slider .slide{position:absolute;top:0;left:0;width:100%;height:100%;opacity:0;transition:opacity 1s ease-in-out;background-size:cover;background-position:center;background-repeat:no-repeat}
-.hero-slider .slide.active{opacity:1}
-.slide-content{position:absolute;bottom:30px;left:30px;background:rgba(139,105,20,0.9);color:white;padding:20px 30px;border-radius:15px;backdrop-filter:blur(10px);transform:translateY(20px);opacity:0;transition:all 0.5s ease 0.3s}
-.hero-slider .slide.active .slide-content{transform:translateY(0);opacity:1}
-.slider-nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(139,105,20,0.8);color:white;border:none;width:50px;height:50px;border-radius:50%;cursor:pointer;font-size:1.2rem;display:flex;align-items:center;justify-content:center;transition:all 0.3s;z-index:10}
-.slider-nav:hover{background:rgba(139,105,20,1);transform:translateY(-50%) scale(1.1)}
-.slider-nav.prev{left:20px}
-.slider-nav.next{right:20px}
-.slider-dots{position:absolute;bottom:20px;right:30px;display:flex;gap:10px;z-index:10}
-.slider-dot{width:12px;height:12px;border-radius:50%;background:rgba(255,255,255,0.5);cursor:pointer;transition:all 0.3s;border:2px solid transparent}
-.slider-dot.active{background:white;transform:scale(1.2)}
-.hero-float-card{position:absolute;bottom:-30px;left:-30px;background:var(--white);padding:1.5rem;border-radius:20px;box-shadow:var(--shadow-hover);display:flex;align-items:center;gap:1rem;z-index:10}
-.float-icon{width:50px;height:50px;background:rgba(139,105,20,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--primary);font-size:1.2rem}
-.float-text h4{font-size:1.5rem;font-weight:700;color:var(--text)}
-.float-text p{font-size:0.9rem;color:var(--text-light)}
+.btn-outline{border:2px solid rgba(255,255,255,0.5);color:white;padding:1rem 2rem;border-radius:50px;text-decoration:none;font-weight:600;display:inline-flex;align-items:center;gap:0.5rem;transition:all 0.3s;background:transparent}
+.btn-outline:hover{background:rgba(255,255,255,0.15);border-color:white;transform:translateY(-3px)}
+.slider-nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.2);color:white;border:none;width:50px;height:50px;border-radius:50%;cursor:pointer;font-size:1.2rem;display:flex;align-items:center;justify-content:center;transition:all 0.3s;z-index:100;backdrop-filter:blur(10px);pointer-events:auto}
+.slider-nav:hover{background:rgba(255,255,255,0.4);transform:translateY(-50%) scale(1.1)}
+.slider-nav.prev{left:30px}
+.slider-nav.next{right:30px}
+.slider-dots{position:absolute;bottom:30px;left:50%;transform:translateX(-50%);display:flex;gap:12px;z-index:20}
+.slider-dot{width:14px;height:14px;border-radius:50%;background:rgba(255,255,255,0.4);cursor:pointer;transition:all 0.3s;border:2px solid transparent}
+.slider-dot.active{background:white;transform:scale(1.2);border-color:var(--primary)}
+.hero-float-card{position:absolute;bottom:40px;right:40px;background:rgba(255,255,255,0.15);padding:1.5rem 2rem;border-radius:20px;backdrop-filter:blur(15px);display:flex;align-items:center;gap:1rem;z-index:10;border:1px solid rgba(255,255,255,0.2)}
+.float-icon{width:50px;height:50px;background:rgba(255,255,255,0.2);border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-size:1.2rem}
+.float-text h4{font-size:1.5rem;font-weight:700;color:white}
+.float-text p{font-size:0.9rem;color:rgba(255,255,255,0.8)}
 .stats-bar{background:var(--primary);padding:3rem 0;margin-top:4rem}
 .stats-container{max-width:1200px;margin:0 auto;padding:0 2rem;display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;text-align:center}
 .stat-item h3{font-size:2.5rem;font-weight:800;color:var(--white);margin-bottom:0.5rem}
@@ -230,10 +231,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-
 .order-product-preview{flex-direction:column;text-align:center}
 .order-product-preview img{margin:0 auto}
 }
-</style>
-<base target="_blank">
-</head>
-<body>
+</style><body>
 <div class="admin-notif" id="adminNotif">
 <i class="fas fa-check-circle"></i>
 <div><strong>Yangi buyurtma!</strong><p style="font-size:0.85rem;margin-top:0.2rem">Mijoz ma'lumotlari yuborildi</p></div>
@@ -258,9 +256,28 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-
 </nav>
 
 <section class="hero" id="home">
-<div class="hero-bg"></div>
+<div class="hero-slider" id="heroSlider">
+<div class="slide active" style="background-image:url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1920&h=1080&fit=crop')"><div class="slide-content"><h3>Yotoqxona mebeli</h3><p>Orzudagi uxlaydigan xonangiz</p></div></div>
+<div class="slide" style="background-image:url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1920&h=1080&fit=crop')"><div class="slide-content"><h3>Oshxona mebeli</h3><p>Zamonaviy oshxona to'plamlari</p></div></div>
+<div class="slide" style="background-image:url('https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1920&h=1080&fit=crop')"><div class="slide-content"><h3>Mehmonxona mebeli</h3><p>Qulay va nafis mehmonxona</p></div></div>
+<div class="slide" style="background-image:url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1920&h=1080&fit=crop')"><div class="slide-content"><h3>Shkaf va garderob</h3><p>Tartibli va zamonaviy saqlash</p></div></div>
+<div class="slide" style="background-image:url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&h=1080&fit=crop')"><div class="slide-content"><h3>Ofis mebeli</h3><p>Professional ish muhiti</p></div></div>
+<div class="slide" style="background-image:url('https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=1920&h=1080&fit=crop')"><div class="slide-content"><h3>Bolalar mebeli</h3><p>Farzandlaringiz uchun qulay va xavfsiz</p></div></div>
+<button class="slider-nav prev" id="sliderPrev" onclick="changeSlide(-1)" style="z-index:100"><i class="fas fa-chevron-left"></i></button>
+<button class="slider-nav next" id="sliderNext" onclick="changeSlide(1)" style="z-index:100"><i class="fas fa-chevron-right"></i></button>
+<div class="slider-dots">
+<div class="slider-dot active" data-slide="0" onclick="goToSlide(0)"></div>
+<div class="slider-dot" data-slide="1" onclick="goToSlide(1)"></div>
+<div class="slider-dot" data-slide="2" onclick="goToSlide(2)"></div>
+<div class="slider-dot" data-slide="3" onclick="goToSlide(3)"></div>
+<div class="slider-dot" data-slide="4" onclick="goToSlide(4)"></div>
+<div class="slider-dot" data-slide="5" onclick="goToSlide(5)"></div>
+</div>
+</div>
+<div class="hero-overlay">
 <div class="hero-container">
 <div class="hero-content">
+<div class="hero-logo-text" style="font-size:5rem;font-weight:900;color:var(--primary-light);margin-bottom:1.2rem;text-shadow:0 4px 25px rgba(0,0,0,0.6);letter-spacing:8px">RAXMON MEBEL</div>
 <div class="hero-badge"><i class="fas fa-star"></i> 26+ yillik tajriba</div>
 <h1 class="hero-title">Sifatli mebel — <span>uyning go'zalligi</span></h1>
 <p class="hero-subtitle">Raxmon Mebel — bu nafaqat mebel, balki uyingiz uchun qulaylik va go'zallik. Biz sizga eng yaxshi sifat va dizaynni taklif qilamiz.</p>
@@ -269,28 +286,11 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-
 <a href="#contact" class="btn btn-outline"><i class="fas fa-phone"></i> Bog'lanish</a>
 </div>
 </div>
-<div class="hero-image">
-<div class="hero-slider" id="heroSlider">
-<div class="slide active" style="background-image:url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&h=600&fit=crop')"><div class="slide-content"><h3>Yotoqxona mebeli</h3><p>Orzudagi uxlaydigan xonangiz</p></div></div>
-<div class="slide" style="background-image:url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=600&fit=crop')"><div class="slide-content"><h3>Oshxona mebeli</h3><p>Zamonaviy oshxona to'plamlari</p></div></div>
-<div class="slide" style="background-image:url('https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&h=600&fit=crop')"><div class="slide-content"><h3>Mehmonxona mebeli</h3><p>Qulay va nafis mehmonxona</p></div></div>
-<div class="slide" style="background-image:url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=600&fit=crop')"><div class="slide-content"><h3>Shkaf va garderob</h3><p>Tartibli va zamonaviy saqlash</p></div></div>
-<div class="slide" style="background-image:url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop')"><div class="slide-content"><h3>Ofis mebeli</h3><p>Professional ish muhiti</p></div></div>
-<button class="slider-nav prev" onclick="changeSlide(-1)"><i class="fas fa-chevron-left"></i></button>
-<button class="slider-nav next" onclick="changeSlide(1)"><i class="fas fa-chevron-right"></i></button>
-<div class="slider-dots">
-<div class="slider-dot active" onclick="goToSlide(0)"></div>
-<div class="slider-dot" onclick="goToSlide(1)"></div>
-<div class="slider-dot" onclick="goToSlide(2)"></div>
-<div class="slider-dot" onclick="goToSlide(3)"></div>
-<div class="slider-dot" onclick="goToSlide(4)"></div>
 </div>
 </div>
 <div class="hero-float-card">
 <div class="float-icon"><i class="fas fa-check-circle"></i></div>
 <div class="float-text"><h4>5000+</h4><p>Mamnun mijozlar</p></div>
-</div>
-</div>
 </div>
 </section>
 
@@ -298,7 +298,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-
 <div class="stats-container">
 <div class="stat-item"><h3>26+</h3><p>Yillik tajriba</p></div>
 <div class="stat-item"><h3>5000+</h3><p>Mamnun mijozlar</p></div>
-<div class="stat-item"><h3>200+</h3><p>Mahsulot turlari</p></div>
+<div class="stat-item"><h3>250+</h3><p>Mahsulot turlari</p></div>
 <div class="stat-item"><h3>50+</h3><p>Usta xodimlar</p></div>
 </div>
 </div>
@@ -321,7 +321,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-
 <div class="about-feature"><i class="fas fa-medal"></i><div><h4>Yuqori sifat</h4><p>Eng yaxshi materiallar</p></div></div>
 <div class="about-feature"><i class="fas fa-palette"></i><div><h4>Zamonaviy dizayn</h4><p>Eng so'nggi trendlar</p></div></div>
 <div class="about-feature"><i class="fas fa-hand-holding-heart"></i><div><h4>Individual yondashuv</h4><p>Har bir mijoz uchun maxsus</p></div></div>
-<div class="about-feature"><i class="fas fa-truck"></i><div><h4>Bepul yetkazib berish</h4><p>Toshkent bo'ylab</p></div></div>
+<div class="about-feature"><i class="fas fa-truck"></i><div><h4>Bepul yetkazib berish</h4><p>O'zbekiston bo'ylab</p></div></div>
 </div>
 </div>
 </div>
@@ -350,6 +350,10 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-
 <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=400&h=320&fit=crop" alt="Shkaf">
 <div class="category-overlay"><h3>Shkaf va garderob</h3><a href="#products" onclick="event.preventDefault();filterByCategory('shkaf')">Ko'rish <i class="fas fa-arrow-right"></i></a></div>
 </div>
+<div class="category-card reveal" onclick="filterByCategory('bolalar')">
+<img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400&h=320&fit=crop" alt="Bolalar">
+<div class="category-overlay"><h3>Bolalar uchun</h3><a href="#products" onclick="event.preventDefault();filterByCategory('bolalar')">Ko'rish <i class="fas fa-arrow-right"></i></a></div>
+</div>
 </div>
 </section>
 
@@ -365,6 +369,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-
 <button class="filter-tab" onclick="filterProducts('yotoqxona', this)">Yotoqxona</button>
 <button class="filter-tab" onclick="filterProducts('oshxona', this)">Oshxona</button>
 <button class="filter-tab" onclick="filterProducts('shkaf', this)">Shkaf</button>
+<button class="filter-tab" onclick="filterProducts('bolalar', this)">Bolalar</button>
 <button class="filter-tab" onclick="filterProducts('ofis', this)">Ofis</button>
 </div>
 <div class="products-grid" id="productsGrid">
@@ -468,6 +473,26 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-
 <div class="product-info"><h3>"Mehmon" kreslosi</h3><p>Mehmonlar uchun kreslo</p><div class="product-footer"><span class="product-price">900 000 so'm</span><button class="product-btn" onclick="addToCart('mehmon','Mehmon kreslosi',900000,'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=300&h=220&fit=crop')"><i class="fas fa-shopping-cart"></i></button></div></div>
 <button class="order-btn" onclick="openOrderModal('mehmon','Mehmon kreslosi',900000,'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=300&h=220&fit=crop','ofis')"><i class="fas fa-shopping-bag"></i> Buyurtma berish</button>
 </div>
+<div class="product-card reveal" data-category="bolalar" data-name="bolalar krovati">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=300&h=220&fit=crop" alt="Bolalar krovati"><span class="product-badge">Yangi</span></div>
+<div class="product-info"><h3>"Orzu" bolalar krovati</h3><p>90x190 sm, xavfsiz chetlar bilan</p><div class="product-footer"><span class="product-price">2 100 000 so'm</span><button class="product-btn" onclick="addToCart('bolalar_krovat','Orzu bolalar krovati',2100000,'https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=300&h=220&fit=crop')"><i class="fas fa-shopping-cart"></i></button></div></div>
+<button class="order-btn" onclick="openOrderModal('bolalar_krovat','Orzu bolalar krovati',2100000,'https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=300&h=220&fit=crop','bolalar')"><i class="fas fa-shopping-bag"></i> Buyurtma berish</button>
+</div>
+<div class="product-card reveal" data-category="bolalar" data-name="bolalar stoli">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1596495578065-6e0763fa1178?w=300&h=220&fit=crop" alt="Bolalar stoli"></div>
+<div class="product-info"><h3>"Bilim" o'quv stoli</h3><p>O'zgaruvchi balandlikdagi stol</p><div class="product-footer"><span class="product-price">1 450 000 so'm</span><button class="product-btn" onclick="addToCart('bolalar_stol','Bilim oquv stoli',1450000,'https://images.unsplash.com/photo-1596495578065-6e0763fa1178?w=300&h=220&fit=crop')"><i class="fas fa-shopping-cart"></i></button></div></div>
+<button class="order-btn" onclick="openOrderModal('bolalar_stol','Bilim oquv stoli',1450000,'https://images.unsplash.com/photo-1596495578065-6e0763fa1178?w=300&h=220&fit=crop','bolalar')"><i class="fas fa-shopping-bag"></i> Buyurtma berish</button>
+</div>
+<div class="product-card reveal" data-category="bolalar" data-name="bolalar shkafi">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1558997519-83ea9252edf8?w=300&h=220&fit=crop" alt="Bolalar shkafi"></div>
+<div class="product-info"><h3>"Sarguzasht" bolalar shkafi</h3><p>Rangli tortmali kiyim shkafi</p><div class="product-footer"><span class="product-price">1 800 000 so'm</span><button class="product-btn" onclick="addToCart('bolalar_shkaf','Sarguzasht bolalar shkafi',1800000,'https://images.unsplash.com/photo-1558997519-83ea9252edf8?w=300&h=220&fit=crop')"><i class="fas fa-shopping-cart"></i></button></div></div>
+<button class="order-btn" onclick="openOrderModal('bolalar_shkaf','Sarguzasht bolalar shkafi',1800000,'https://images.unsplash.com/photo-1558997519-83ea9252edf8?w=300&h=220&fit=crop','bolalar')"><i class="fas fa-shopping-bag"></i> Buyurtma berish</button>
+</div>
+<div class="product-card reveal" data-category="bolalar" data-name="bolalar stuli">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1503602642458-232111445657?w=300&h=220&fit=crop" alt="Bolalar stuli"><span class="product-badge">Top</span></div>
+<div class="product-info"><h3>"Kelajak" bolalar stuli</h3><p>Ergonomic o'quv stuli</p><div class="product-footer"><span class="product-price">680 000 so'm</span><button class="product-btn" onclick="addToCart('bolalar_stul','Kelajak bolalar stuli',680000,'https://images.unsplash.com/photo-1503602642458-232111445657?w=300&h=220&fit=crop')"><i class="fas fa-shopping-cart"></i></button></div></div>
+<button class="order-btn" onclick="openOrderModal('bolalar_stul','Kelajak bolalar stuli',680000,'https://images.unsplash.com/photo-1503602642458-232111445657?w=300&h=220&fit=crop','bolalar')"><i class="fas fa-shopping-bag"></i> Buyurtma berish</button>
+</div>
 </div>
 </section>
 
@@ -500,7 +525,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-
 <div class="feature-card reveal">
 <div class="feature-icon"><i class="fas fa-truck"></i></div>
 <h3>Bepul yetkazib berish</h3>
-<p>Toshkent shahri bo'ylab bepul yetkazib berish va o'rnatish.</p>
+<p>O'zbekiston bo'ylab yetkazib berish va o'rnatish.</p>
 </div>
 <div class="feature-card reveal">
 <div class="feature-icon"><i class="fas fa-pencil-ruler"></i></div>
@@ -550,7 +575,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-
 <h3>Aloqa ma'lumotlari</h3>
 <p>Biz bilan quyidagi manzillar orqali bog'lanishingiz mumkin.</p>
 <div class="contact-details">
-<div class="contact-item"><i class="fas fa-map-marker-alt"></i><div><h4>Manzil</h4><p>Urgut, Mergancha MFY,<br>Mo'ljal: Katta masjid yonida</p></div></div>
+<div class="contact-item"><i class="fas fa-map-marker-alt"></i><div><h4>Manzil</h4><p>Urgut, Mergancha MFY,<br>Mo'ljal: Katta masjid yonida</p><a href="https://maps.app.goo.gl/ZUCU6vwPUsH8hhDB8" target="_blank" style="display:inline-flex;align-items:center;gap:0.5rem;margin-top:0.5rem;color:var(--primary);font-weight:600;text-decoration:none"><i class="fas fa-map-marked-alt"></i> Xaritadan toping</a></div></div>
 <div class="contact-item"><i class="fas fa-phone"></i><div><h4>Telefon</h4><p>+99899 773 21 11</p></div></div>
 <div class="contact-item"><i class="fas fa-envelope"></i><div><h4>Email</h4><p>info@raxmonmebel.uz</p></div></div>
 <div class="contact-item"><i class="fas fa-clock"></i><div><h4>Ish vaqti</h4><p>Har kuni: 8:00 - 19:00</p><div style="margin-top:15px;display:flex;gap:12px;flex-wrap:wrap">
@@ -708,35 +733,127 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-
 
 <script>
 // ===== HERO SLIDER =====
-let currentSlide = 0;
-const slides = document.querySelectorAll('.hero-slider .slide');
-const dots = document.querySelectorAll('.slider-dot');
-const totalSlides = 5;
-let slideInterval = null;
+var sliderCurrentSlide = 0;
+var sliderSlides = [];
+var sliderDots = [];
+var sliderTotal = 0;
+var sliderInterval = null;
 
-function showSlide(index) {
-    slides.forEach((slide, i) => { slide.classList.toggle('active', i === index); });
-    dots.forEach((dot, i) => { dot.classList.toggle('active', i === index); });
-    currentSlide = index;
+function sliderInit() {
+    try {
+        sliderSlides = document.querySelectorAll('.hero-slider .slide');
+        sliderDots = document.querySelectorAll('.slider-dot');
+        sliderTotal = sliderSlides.length;
+        console.log('Slider init: found ' + sliderTotal + ' slides');
+        if (sliderTotal > 0) {
+            sliderShow(0);
+            sliderStart();
+        }
+        // Attach event listeners to navigation buttons
+        var prevBtn = document.getElementById('sliderPrev');
+        var nextBtn = document.getElementById('sliderNext');
+        if (prevBtn) {
+            prevBtn.addEventListener('click', function() { changeSlide(-1); });
+            console.log('Prev button listener attached');
+        }
+        if (nextBtn) {
+            nextBtn.addEventListener('click', function() { changeSlide(1); });
+            console.log('Next button listener attached');
+        }
+        // Attach event listeners to dots
+        var dots = document.querySelectorAll('.slider-dot');
+        for (var i = 0; i < dots.length; i++) {
+            (function(index) {
+                dots[index].addEventListener('click', function() { goToSlide(index); });
+            })(i);
+        }
+        console.log('Dot listeners attached: ' + dots.length);
+    } catch(e) {
+        console.error('Slider init error:', e);
+    }
 }
 
-function changeSlide(direction) {
-    let newIndex = currentSlide + direction;
-    if (newIndex >= totalSlides) newIndex = 0;
-    if (newIndex < 0) newIndex = totalSlides - 1;
-    showSlide(newIndex);
+function sliderShow(index) {
+    try {
+        if (!sliderSlides.length) return;
+        for (var i = 0; i < sliderSlides.length; i++) {
+            sliderSlides[i].classList.toggle('active', i === index);
+        }
+        for (var i = 0; i < sliderDots.length; i++) {
+            sliderDots[i].classList.toggle('active', i === index);
+        }
+        sliderCurrentSlide = index;
+        console.log('Slide changed to:', index);
+    } catch(e) {
+        console.error('Slider show error:', e);
+    }
+}
+
+function sliderNext(direction) {
+    try {
+        if (!sliderTotal) return;
+        var newIndex = sliderCurrentSlide + direction;
+        if (newIndex >= sliderTotal) newIndex = 0;
+        if (newIndex < 0) newIndex = sliderTotal - 1;
+        sliderShow(newIndex);
+    } catch(e) {
+        console.error('Slider next error:', e);
+    }
 }
 
 function goToSlide(index) {
-    showSlide(index);
+    try {
+        console.log('goToSlide called:', index);
+        if (index >= 0 && index < sliderTotal) {
+            sliderShow(index);
+            sliderReset();
+        }
+    } catch(e) {
+        console.error('goToSlide error:', e);
+    }
 }
 
-function startSlider() {
-    if (slideInterval) clearInterval(slideInterval);
-    slideInterval = setInterval(() => changeSlide(1), 2000);
+function changeSlide(direction) {
+    try {
+        console.log('changeSlide called:', direction);
+        sliderNext(direction);
+        sliderReset();
+    } catch(e) {
+        console.error('changeSlide error:', e);
+    }
 }
 
-startSlider();
+function sliderStart() {
+    try {
+        if (sliderInterval) clearInterval(sliderInterval);
+        sliderInterval = setInterval(function() { sliderNext(1); }, 1000);
+        console.log('Slider auto-start enabled');
+    } catch(e) {
+        console.error('Slider start error:', e);
+    }
+}
+
+function sliderReset() {
+    try {
+        sliderStart();
+    } catch(e) {
+        console.error('Slider reset error:', e);
+    }
+}
+
+// Initialize when DOM is ready
+function sliderReady() {
+    console.log('DOM ready, initializing slider...');
+    sliderInit();
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', sliderReady);
+} else if (document.readyState === 'interactive' || document.readyState === 'complete') {
+    sliderReady();
+} else {
+    document.addEventListener('DOMContentLoaded', sliderReady);
+}
 
 // ===== CATEGORY FILTER =====
 function filterByCategory(category) {
@@ -973,4 +1090,331 @@ function toggleMenu() {
 }
 </script>
 </body>
-</html>
+</html><script>
+// ===== HERO SLIDER =====
+(function() {
+    var currentSlide = 0;
+    var slides = [];
+    var dots = [];
+    var totalSlides = 0;
+    var slideInterval = null;
+
+    function initSlider() {
+        slides = document.querySelectorAll('.hero-slider .slide');
+        dots = document.querySelectorAll('.slider-dot');
+        totalSlides = slides.length;
+        console.log('Slider initialized. Total slides:', totalSlides);
+        if (totalSlides > 0) {
+            showSlide(0);
+            startSlider();
+        }
+    }
+
+    function showSlide(index) {
+        if (!slides.length) return;
+        for (var i = 0; i < slides.length; i++) {
+            slides[i].classList.toggle('active', i === index);
+        }
+        for (var i = 0; i < dots.length; i++) {
+            dots[i].classList.toggle('active', i === index);
+        }
+        currentSlide = index;
+    }
+
+    function nextSlide(direction) {
+        if (!totalSlides) return;
+        var newIndex = currentSlide + direction;
+        if (newIndex >= totalSlides) newIndex = 0;
+        if (newIndex < 0) newIndex = totalSlides - 1;
+        showSlide(newIndex);
+    }
+
+    window.goToSlide = function(index) {
+        if (index >= 0 && index < totalSlides) {
+            showSlide(index);
+            resetTimer();
+        }
+    };
+
+    window.changeSlide = function(direction) {
+        nextSlide(direction);
+        resetTimer();
+    };
+
+    // Also expose for inline onclick handlers
+    
+    
+
+    function startSlider() {
+        if (slideInterval) clearInterval(slideInterval);
+        slideInterval = setInterval(function() { nextSlide(1); }, 5000);
+    }
+
+    function resetTimer() {
+        startSlider();
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initSlider);
+    } else {
+        initSlider();
+    }
+})();
+
+// ===== CATEGORY FILTER =====
+function filterByCategory(category) {
+    document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
+    setTimeout(function() {
+        var tabs = document.querySelectorAll('.filter-tab');
+        tabs.forEach(function(t) { t.classList.remove('active'); });
+        var targetTab = Array.from(tabs).find(function(t) { 
+            return t.textContent.toLowerCase().includes(category === 'shkaf' ? 'shkaf' : category); 
+        });
+        if (targetTab) targetTab.classList.add('active');
+        filterProducts(category, targetTab || tabs[0]);
+    }, 500);
+}
+
+function filterProducts(category, btn) {
+    document.querySelectorAll('.filter-tab').forEach(function(t) { t.classList.remove('active'); });
+    if (btn) btn.classList.add('active');
+    var cards = document.querySelectorAll('.product-card');
+    cards.forEach(function(card) {
+        if (category === 'all' || card.dataset.category === category) {
+            card.classList.remove('hidden');
+        } else {
+            card.classList.add('hidden');
+        }
+    });
+}
+
+// ===== SEARCH =====
+function searchProducts() {
+    var query = document.getElementById('searchInput').value.toLowerCase().trim();
+    if (!query) {
+        filterProducts('all', document.querySelectorAll('.filter-tab')[0]);
+        return;
+    }
+    document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
+    document.querySelectorAll('.filter-tab').forEach(function(t) { t.classList.remove('active'); });
+    var cards = document.querySelectorAll('.product-card');
+    var found = false;
+    cards.forEach(function(card) {
+        var name = card.dataset.name || '';
+        var cat = card.dataset.category || '';
+        if (name.includes(query) || cat.includes(query)) {
+            card.classList.remove('hidden');
+            found = true;
+        } else {
+            card.classList.add('hidden');
+        }
+    });
+    if (!found) {
+        alert('"' + query + '" bo\'yicha hech narsa topilmadi. Boshqa so\'z bilan qidirib ko\'ring.');
+    }
+}
+
+document.getElementById('searchInput').addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') searchProducts();
+});
+
+// ===== CART =====
+var cart = [];
+function addToCart(id, name, price, image) {
+    var existing = cart.find(function(item) { return item.id === id; });
+    if (existing) {
+        existing.qty++;
+    } else {
+        cart.push({ id: id, name: name, price: price, image: image, qty: 1 });
+    }
+    updateCartUI();
+    showNotification('Savatchaga qo\'shildi: ' + name);
+}
+
+function removeFromCart(id) {
+    cart = cart.filter(function(item) { return item.id !== id; });
+    updateCartUI();
+}
+
+function updateCartUI() {
+    var count = cart.reduce(function(sum, item) { return sum + item.qty; }, 0);
+    document.getElementById('cartCount').textContent = count;
+    var body = document.getElementById('cartBody');
+    var footer = document.getElementById('cartFooter');
+    if (cart.length === 0) {
+        body.innerHTML = '<div class="cart-empty"><i class="fas fa-shopping-basket"></i><p>Savatcha bo\'sh</p><p style="font-size:0.85rem">Mahsulot qo\'shish uchun "Buyurtma berish" tugmasini bosing</p></div>';
+        footer.style.display = 'none';
+        return;
+    }
+    var html = '';
+    var total = 0;
+    cart.forEach(function(item) {
+        var itemTotal = item.price * item.qty;
+        total += itemTotal;
+        html += '<div class="cart-item"><img src="' + item.image + '" alt=""><div class="cart-item-info"><h4>' + item.name + '</h4><p>Miqdor: ' + item.qty + ' ta</p><span class="cart-item-price">' + itemTotal.toLocaleString() + ' so\'m</span></div><button class="cart-item-remove" onclick="removeFromCart(\'' + item.id + '\')"><i class="fas fa-trash"></i></button></div>';
+    });
+    body.innerHTML = html;
+    document.getElementById('cartTotal').textContent = total.toLocaleString() + ' so\'m';
+    footer.style.display = 'block';
+}
+
+function openCart() {
+    document.getElementById('cartModalOverlay').classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeCart() {
+    document.getElementById('cartModalOverlay').classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+function openCartOrder() {
+    closeCart();
+    if (cart.length > 0) {
+        var firstItem = cart[0];
+        openOrderModal(firstItem.id, firstItem.name, firstItem.price, firstItem.image, '');
+    }
+}
+
+// ===== ORDER MODAL =====
+var currentOrder = { id: '', name: '', price: 0, image: '', color: 'Jigarrang', material: 'Yog\'och', qty: 1 };
+
+function openOrderModal(id, name, price, image, category) {
+    try {
+        currentOrder = { id: id, name: name, price: price, image: image, color: 'Jigarrang', material: 'Yog\'och', qty: 1 };
+        document.getElementById('orderImg').src = image;
+        document.getElementById('orderImg').alt = name;
+        document.getElementById('orderName').textContent = name;
+        document.getElementById('orderPrice').textContent = price.toLocaleString() + ' so\'m';
+        document.getElementById('orderQty').textContent = '1';
+        document.getElementById('sizeL').value = '200';
+        document.getElementById('sizeW').value = '100';
+        document.getElementById('sizeH').value = '80';
+        document.getElementById('custName').value = '';
+        document.getElementById('custPhone').value = '';
+        document.getElementById('custAddress').value = '';
+        document.getElementById('custNote').value = '';
+        document.querySelectorAll('#colorOptions .option-btn').forEach(function(b, i) { b.classList.toggle('selected', i === 0); });
+        document.querySelectorAll('#materialOptions .option-btn').forEach(function(b, i) { b.classList.toggle('selected', i === 0); });
+        document.getElementById('orderModalOverlay').classList.add('active');
+        document.body.style.overflow = 'hidden';
+    } catch(e) {
+        console.error('Modal ochishda xato:', e);
+        alert('Xatolik yuz berdi. Iltimos, sahifani yangilab qayta urinib ko\'ring.');
+    }
+}
+
+function closeOrderModal() {
+    document.getElementById('orderModalOverlay').classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+function selectOption(btn, type) {
+    var parent = btn.parentElement;
+    parent.querySelectorAll('.option-btn').forEach(function(b) { b.classList.remove('selected'); });
+    btn.classList.add('selected');
+    if (type === 'color') currentOrder.color = btn.textContent;
+    if (type === 'material') currentOrder.material = btn.textContent;
+}
+
+function changeQty(delta) {
+    currentOrder.qty = Math.max(1, currentOrder.qty + delta);
+    document.getElementById('orderQty').textContent = currentOrder.qty;
+}
+
+// ===== SUBMIT ORDER =====
+function submitOrder() {
+    try {
+        var name = document.getElementById('custName').value.trim();
+        var phone = document.getElementById('custPhone').value.trim();
+        var address = document.getElementById('custAddress').value.trim();
+        var note = document.getElementById('custNote').value.trim();
+        var sizeL = document.getElementById('sizeL').value || '200';
+        var sizeW = document.getElementById('sizeW').value || '100';
+        var sizeH = document.getElementById('sizeH').value || '80';
+
+        if (!name) {
+            alert('Iltimos, ismingizni kiriting!');
+            document.getElementById('custName').focus();
+            return;
+        }
+        if (!phone) {
+            alert('Iltimos, telefon raqamingizni kiriting!');
+            document.getElementById('custPhone').focus();
+            return;
+        }
+
+        var phoneRegex = /^[\+]?[0-9\s\-\(\)]{9,20}$/;
+        if (!phoneRegex.test(phone.replace(/\s/g,''))) {
+            alert('Telefon raqami noto\'g\'ri formatda!');
+            document.getElementById('custPhone').focus();
+            return;
+        }
+
+        var orderData = {
+            product: currentOrder.name,
+            price: currentOrder.price,
+            color: currentOrder.color,
+            material: currentOrder.material,
+            size: sizeL + 'x' + sizeW + 'x' + sizeH + ' sm',
+            qty: currentOrder.qty,
+            customer: name,
+            phone: phone,
+            address: address,
+            note: note,
+            total: (currentOrder.price * currentOrder.qty).toLocaleString() + ' so\'m',
+            date: new Date().toLocaleString('uz-UZ')
+        };
+
+        var notif = document.getElementById('adminNotif');
+        if (notif) {
+            notif.classList.add('show');
+            setTimeout(function() { notif.classList.remove('show'); }, 5000);
+        }
+
+        console.log('=== YANGI BUYURTMA ===');
+        console.log(JSON.stringify(orderData, null, 2));
+
+        alert('Buyurtmangiz qabul qilindi! Tez orada siz bilan bog\'lanamiz.\n\nMahsulot: ' + currentOrder.name + '\nRang: ' + currentOrder.color + '\nMaterial: ' + currentOrder.material + '\nOlcham: ' + orderData.size + '\nMiqdor: ' + currentOrder.qty + ' ta\nJami: ' + orderData.total);
+
+        closeOrderModal();
+    } catch(e) {
+        console.error('Buyurtma yuborishda xato:', e);
+        alert('Xatolik yuz berdi: ' + e.message);
+    }
+}
+
+function showNotification(msg) {
+    var div = document.createElement('div');
+    div.style.cssText = 'position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:var(--primary);color:white;padding:1rem 2rem;border-radius:50px;z-index:4000;animation:fadeInUp 0.5s ease;font-weight:600;box-shadow:0 10px 30px rgba(0,0,0,0.2)';
+    div.textContent = msg;
+    document.body.appendChild(div);
+    setTimeout(function() { 
+        div.style.animation = 'fadeInUp 0.5s ease reverse'; 
+        setTimeout(function() { div.remove(); }, 500); 
+    }, 2000);
+}
+
+// ===== SCROLL =====
+window.addEventListener('scroll', function() {
+    var navbar = document.getElementById('navbar');
+    if (window.scrollY > 50) { 
+        navbar.style.boxShadow = '0 4px 20px rgba(0,0,0,0.1)'; 
+    } else { 
+        navbar.style.boxShadow = 'none'; 
+    }
+});
+
+// ===== SMOOTH SCROLL =====
+document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        var target = document.querySelector(this.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+});
+
+function toggleMenu() {
+    document.getElementById('navLinks').classList.toggle('active');
+}
+</script>
