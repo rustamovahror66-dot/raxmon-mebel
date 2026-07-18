@@ -1,365 +1,711 @@
 <!DOCTYPE html>
 <html lang="uz">
 <head>
-    <meta charset="UTF-8">
-    <meta name="google-site-verification" content="LEwBJHIJiIOEkvyM5mNxrLH_h1gchNAXjfsgiIpzCc0" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raxmon Mebel - Sifatli mebel uyning go'zalligi</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-               *{margin:0;padding:0;box-sizing:border-box}:root{--primary:#8B6914;--primary-light:#D4A84B;--accent:#C9A84C;--bg:#FAF8F5;--text:#2C2C2C;--text-light:#666;--white:#ffffff;--shadow:0 4px 20px rgba(0,0,0,0.08);--shadow-hover:0 8px 30px rgba(0,0,0,0.12)}body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden}::-webkit-scrollbar{width:8px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:var(--primary);border-radius:4px}.navbar{position:fixed;top:0;width:100%;background:rgba(250,248,245,0.95);backdrop-filter:blur(10px);z-index:1000;padding:1rem 0;transition:all 0.3s ease;border-bottom:1px solid rgba(139,105,20,0.1)}.navbar.scrolled{box-shadow:var(--shadow);padding:0.7rem 0}.nav-container{max-width:1200px;margin:0 auto;padding:0 2rem;display:flex;justify-content:space-between;align-items:center}.logo{font-size:1.8rem;font-weight:800;color:var(--primary);text-decoration:none;display:flex;align-items:center;gap:0.5rem}.logo i{font-size:1.5rem}.nav-links{display:flex;gap:2.5rem;list-style:none}.nav-links a{text-decoration:none;color:var(--text);font-weight:500;font-size:0.95rem;transition:color 0.3s;position:relative}.nav-links a::after{content:'';position:absolute;bottom:-5px;left:0;width:0;height:2px;background:var(--primary);transition:width 0.3s}.nav-links a:hover{color:var(--primary)}.nav-links a:hover::after{width:100%}.nav-cta{background:var(--primary);color:var(--white)!important;padding:0.6rem 1.5rem;border-radius:50px;transition:all 0.3s!important}.nav-cta:hover{background:var(--accent);transform:translateY(-2px)}.nav-cta::after{display:none!important}.mobile-menu-btn{display:none;background:none;border:none;font-size:1.5rem;color:var(--primary);cursor:pointer}.hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding-top:80px}.hero-bg{position:absolute;top:0;right:0;width:55%;height:100%;background:linear-gradient(135deg,rgba(139,105,20,0.05) 0%,rgba(201,168,76,0.1) 100%);clip-path:polygon(20% 0,100% 0,100% 100%,0% 100%);z-index:0}.hero-container{max-width:1200px;margin:0 auto;padding:0 2rem;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;position:relative;z-index:1}.hero-content{animation:fadeInLeft 1s ease}.hero-badge{display:inline-flex;align-items:center;gap:0.5rem;background:rgba(139,105,20,0.1);color:var(--primary);padding:0.5rem 1rem;border-radius:50px;font-size:0.85rem;font-weight:600;margin-bottom:1.5rem}.hero-title{font-size:3.5rem;font-weight:800;line-height:1.1;margin-bottom:1.5rem;color:var(--text)}.hero-title span{color:var(--primary);position:relative}.hero-title span::after{content:'';position:absolute;bottom:5px;left:0;width:100%;height:8px;background:rgba(201,168,76,0.3);z-index:-1}.hero-subtitle{font-size:1.2rem;color:var(--text-light);margin-bottom:2.5rem;max-width:500px}.hero-buttons{display:flex;gap:1rem;flex-wrap:wrap}.btn{padding:1rem 2.5rem;border-radius:50px;font-weight:600;font-size:1rem;text-decoration:none;display:inline-flex;align-items:center;gap:0.5rem;transition:all 0.3s ease;cursor:pointer;border:none}.btn-primary{background:var(--primary);color:var(--white);box-shadow:0 4px 15px rgba(139,105,20,0.3)}.btn-primary:hover{background:var(--accent);transform:translateY(-3px);box-shadow:0 8px 25px rgba(139,105,20,0.4)}.btn-outline{background:transparent;color:var(--primary);border:2px solid var(--primary)}.btn-outline:hover{background:var(--primary);color:var(--white);transform:translateY(-3px)}.hero-image{position:relative;animation:fadeInRight 1s ease 0.3s both}.hero-image img{width:100%;border-radius:20px;box-shadow:var(--shadow-hover)}.hero-float-card{position:absolute;bottom:-20px;left:-30px;background:var(--white);padding:1.5rem;border-radius:15px;box-shadow:var(--shadow-hover);display:flex;align-items:center;gap:1rem;animation:float 3s ease-in-out infinite}.float-icon{width:50px;height:50px;background:rgba(139,105,20,0.1);border-radius:12px;display:flex;align-items:center;justify-content:center;color:var(--primary);font-size:1.3rem}.float-text h4{font-size:1.2rem;font-weight:700}.float-text p{font-size:0.85rem;color:var(--text-light)}.stats-bar{background:var(--white);padding:3rem 0;margin-top:-2rem;position:relative;z-index:2}.stats-container{max-width:1200px;margin:0 auto;padding:0 2rem;display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;text-align:center}.stat-item h3{font-size:2.5rem;font-weight:800;color:var(--primary)}.stat-item p{color:var(--text-light);font-size:0.95rem;margin-top:0.3rem}.section{padding:6rem 0}.section-header{text-align:center;max-width:600px;margin:0 auto 4rem}.section-label{display:inline-block;background:rgba(139,105,20,0.1);color:var(--primary);padding:0.4rem 1.2rem;border-radius:50px;font-size:0.85rem;font-weight:600;margin-bottom:1rem}.section-title{font-size:2.5rem;font-weight:800;margin-bottom:1rem}.section-desc{color:var(--text-light);font-size:1.05rem}.about-grid{max-width:1200px;margin:0 auto;padding:0 2rem;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}.about-image{position:relative}.about-image img{width:100%;border-radius:20px;box-shadow:var(--shadow-hover)}.about-image::before{content:'';position:absolute;top:20px;left:20px;width:100%;height:100%;border:3px solid var(--primary-light);border-radius:20px;z-index:-1}.about-content h3{font-size:2rem;font-weight:700;margin-bottom:1.5rem}.about-content p{color:var(--text-light);margin-bottom:1.5rem;font-size:1.05rem}.about-features{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:2rem}.about-feature{display:flex;align-items:flex-start;gap:1rem}.about-feature i{color:var(--primary);font-size:1.3rem;margin-top:0.2rem}.about-feature h4{font-weight:600;margin-bottom:0.3rem}.about-feature p{font-size:0.9rem;margin:0}.categories-grid{max-width:1200px;margin:0 auto;padding:0 2rem;display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}.category-card{position:relative;border-radius:20px;overflow:hidden;height:320px;cursor:pointer;box-shadow:var(--shadow);transition:all 0.4s ease}.category-card:hover{transform:translateY(-10px);box-shadow:var(--shadow-hover)}.category-card img{width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease}.category-card:hover img{transform:scale(1.1)}.category-overlay{position:absolute;bottom:0;left:0;right:0;padding:2rem;background:linear-gradient(to top,rgba(0,0,0,0.8) 0%,transparent 100%);color:var(--white)}.category-overlay h3{font-size:1.4rem;font-weight:700;margin-bottom:0.5rem}.category-overlay a{color:var(--primary-light);text-decoration:none;font-weight:600;display:inline-flex;align-items:center;gap:0.5rem;transition:gap 0.3s}.category-overlay a:hover{gap:1rem}.products-grid{max-width:1200px;margin:0 auto;padding:0 2rem;display:grid;grid-template-columns:repeat(4,1fr);gap:2rem}.product-card{background:var(--white);border-radius:20px;overflow:hidden;box-shadow:var(--shadow);transition:all 0.4s ease}.product-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-hover)}.product-image{position:relative;height:220px;overflow:hidden}.product-image img{width:100%;height:100%;object-fit:cover;transition:transform 0.5s}.product-card:hover .product-image img{transform:scale(1.1)}.product-badge{position:absolute;top:1rem;left:1rem;background:var(--primary);color:var(--white);padding:0.3rem 0.8rem;border-radius:50px;font-size:0.75rem;font-weight:600}.product-info{padding:1.5rem}.product-info h3{font-size:1.1rem;font-weight:700;margin-bottom:0.5rem}.product-info p{color:var(--text-light);font-size:0.9rem;margin-bottom:1rem}.product-footer{display:flex;justify-content:space-between;align-items:center}.product-price{font-size:1.3rem;font-weight:800;color:var(--primary)}.product-btn{width:40px;height:40px;border-radius:50%;background:var(--primary);color:var(--white);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.3s}.product-btn:hover{background:var(--accent);transform:scale(1.1)}.why-section{background:linear-gradient(135deg,var(--primary) 0%,#6B5010 100%);color:var(--white);padding:6rem 0}.why-section .section-title,.why-section .section-desc{color:var(--white)}.why-grid{max-width:1200px;margin:0 auto;padding:0 2rem;display:grid;grid-template-columns:repeat(4,1fr);gap:2rem}.why-card{background:rgba(255,255,255,0.1);backdrop-filter:blur(10px);padding:2.5rem 2rem;border-radius:20px;text-align:center;border:1px solid rgba(255,255,255,0.2);transition:all 0.3s}.why-card:hover{background:rgba(255,255,255,0.15);transform:translateY(-5px)}.why-icon{width:70px;height:70px;background:rgba(255,255,255,0.2);border-radius:20px;display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;font-size:1.8rem}.why-card h3{font-size:1.2rem;font-weight:700;margin-bottom:0.8rem}.why-card p{font-size:0.9rem;opacity:0.9}.gallery-grid{max-width:1200px;margin:0 auto;padding:0 2rem;display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}.gallery-item{position:relative;border-radius:15px;overflow:hidden;height:280px;cursor:pointer}.gallery-item img{width:100%;height:100%;object-fit:cover;transition:transform 0.5s}.gallery-item:hover img{transform:scale(1.1)}.gallery-overlay{position:absolute;inset:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity 0.3s}.gallery-item:hover .gallery-overlay{opacity:1}.gallery-overlay i{color:var(--white);font-size:2rem}.gallery-item:nth-child(2){grid-row:span 2;height:100%}.testimonials-grid{max-width:1200px;margin:0 auto;padding:0 2rem;display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}.testimonial-card{background:var(--white);padding:2.5rem;border-radius:20px;box-shadow:var(--shadow);position:relative}.testimonial-card::before{content:'"';position:absolute;top:20px;right:30px;font-size:5rem;color:var(--primary-light);opacity:0.3;font-family:serif;line-height:1}.stars{color:#FFB800;margin-bottom:1rem;font-size:0.9rem}.testimonial-text{color:var(--text-light);margin-bottom:1.5rem;font-style:italic}.testimonial-author{display:flex;align-items:center;gap:1rem}.author-avatar{width:50px;height:50px;border-radius:50%;object-fit:cover}.author-info h4{font-weight:700;font-size:1rem}.author-info p{color:var(--text-light);font-size:0.85rem}.contact-grid{max-width:1200px;margin:0 auto;padding:0 2rem;display:grid;grid-template-columns:1fr 1fr;gap:4rem}.contact-info h3{font-size:1.8rem;font-weight:700;margin-bottom:1.5rem}.contact-info p{color:var(--text-light);margin-bottom:2rem}.contact-item{display:flex;align-items:flex-start;gap:1rem;margin-bottom:1.5rem}.contact-item i{width:50px;height:50px;background:rgba(139,105,20,0.1);border-radius:12px;display:flex;align-items:center;justify-content:center;color:var(--primary);font-size:1.2rem;flex-shrink:0}.contact-item h4{font-weight:600;margin-bottom:0.2rem}.contact-item p{margin:0;font-size:0.95rem}.social-links{display:flex;gap:1rem;margin-top:2rem}.social-links a{width:45px;height:45px;border-radius:50%;background:var(--primary);color:var(--white);display:flex;align-items:center;justify-content:center;text-decoration:none;transition:all 0.3s}.social-links a:hover{background:var(--accent);transform:translateY(-3px)}.contact-form{background:var(--white);padding:2.5rem;border-radius:20px;box-shadow:var(--shadow)}.form-group{margin-bottom:1.5rem}.form-group label{display:block;font-weight:600;margin-bottom:0.5rem;font-size:0.9rem}.form-group input,.form-group textarea{width:100%;padding:1rem;border:2px solid #eee;border-radius:12px;font-family:inherit;font-size:1rem;transition:border-color 0.3s}.form-group input:focus,.form-group textarea:focus{outline:none;border-color:var(--primary)}.form-group textarea{resize:vertical;min-height:120px}.submit-btn{width:100%;padding:1rem;background:var(--primary);color:var(--white);border:none;border-radius:12px;font-size:1rem;font-weight:600;cursor:pointer;transition:all 0.3s}.submit-btn:hover{background:var(--accent);transform:translateY(-2px)}.map-container{max-width:1200px;margin:0 auto;padding:0 2rem;margin-top:4rem}.map-placeholder{width:100%;height:400px;background:linear-gradient(135deg,#e8e4df 0%,#d4cfc7 100%);border-radius:20px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:1rem;color:var(--text-light)}.map-placeholder i{font-size:3rem;color:var(--primary)}.footer{background:var(--text);color:var(--white);padding:4rem 0 2rem}.footer-grid{max-width:1200px;margin:0 auto;padding:0 2rem;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem}.footer-brand h3{font-size:1.8rem;margin-bottom:1rem;color:var(--primary-light)}.footer-brand p{color:rgba(255,255,255,0.7);line-height:1.8}.footer-column h4{font-size:1.1rem;margin-bottom:1.5rem;color:var(--white)}.footer-column ul{list-style:none}.footer-column ul li{margin-bottom:0.8rem}.footer-column ul li a{color:rgba(255,255,255,0.7);text-decoration:none;transition:color 0.3s}.footer-column ul li a:hover{color:var(--primary-light)}.footer-bottom{max-width:1200px;margin:3rem auto 0;padding:2rem 2rem 0;border-top:1px solid rgba(255,255,255,0.1);display:flex;justify-content:space-between;align-items:center;color:rgba(255,255,255,0.5);font-size:0.9rem}@keyframes fadeInLeft{from{opacity:0;transform:translateX(-50px)}to{opacity:1;transform:translateX(0)}}@keyframes fadeInRight{from{opacity:0;transform:translateX(50px)}to{opacity:1;transform:translateX(0)}}@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}.reveal{opacity:0;transform:translateY(30px);transition:all 0.8s ease}.reveal.active{opacity:1;transform:translateY(0)}@media(max-width:1024px){.hero-container{grid-template-columns:1fr;text-align:center}.hero-content{order:2}.hero-image{order:1}.hero-subtitle{margin:0 auto 2rem}.hero-buttons{justify-content:center}.hero-float-card{display:none}.hero-bg{width:100%;clip-path:none;opacity:0.3}.about-grid,.contact-grid{grid-template-columns:1fr}.about-image::before{display:none}.categories-grid,.products-grid,.why-grid,.testimonials-grid{grid-template-columns:repeat(2,1fr)}.gallery-grid{grid-template-columns:repeat(2,1fr)}.gallery-item:nth-child(2){grid-row:span 1}.footer-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:768px){.nav-links{display:none}.mobile-menu-btn{display:block}.hero-title{font-size:2.5rem}.stats-container{grid-template-columns:repeat(2,1fr)}.categories-grid,.products-grid,.why-grid,.testimonials-grid,.gallery-grid{grid-template-columns:1fr}.about-features{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr;text-align:center}.footer-bottom{flex-direction:column;gap:1rem;text-align:center}.section{padding:4rem 0}.section-title{font-size:2rem}}
-    </style>
-.hero-slider {
-    position: relative;
-    width: 100%;
-     height: 500px;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Raxmon Mebel - Sifatli mebel uyning go'zalligi</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--primary:#8B6914;--primary-light:#D4A84B;--accent:#C9A84C;--bg:#FAF8F5;--text:#2C2C2C;--text-light:#666;--white:#ffffff;--shadow:0 4px 20px rgba(0,0,0,0.08);--shadow-hover:0 8px 30px rgba(0,0,0,0.12);--success:#28a745;--danger:#dc3545}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden}
+.navbar{position:fixed;top:0;width:100%;background:rgba(250,248,245,0.95);backdrop-filter:blur(10px);z-index:1000;padding:1rem 0;transition:all 0.3s ease;border-bottom:1px solid rgba(139,105,20,0.1)}
+.nav-container{max-width:1200px;margin:0 auto;padding:0 2rem;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:1.8rem;font-weight:800;color:var(--primary);text-decoration:none;display:flex;align-items:center;gap:0.5rem}
+.nav-links{display:flex;gap:2.5rem;list-style:none;align-items:center}
+.nav-links a{text-decoration:none;color:var(--text);font-weight:500;font-size:0.95rem;transition:color 0.3s;position:relative}
+.nav-links a:hover{color:var(--primary)}
+.nav-cta{background:var(--primary);color:var(--white)!important;padding:0.6rem 1.5rem;border-radius:50px;transition:all 0.3s!important}
+.nav-cta:hover{background:var(--accent);transform:translateY(-2px)}
+.mobile-menu-btn{display:none;background:none;border:none;font-size:1.5rem;color:var(--primary);cursor:pointer}
+.search-bar{position:relative;display:flex;align-items:center}
+.search-bar input{padding:0.5rem 1rem;border:2px solid rgba(139,105,20,0.2);border-radius:50px;font-family:inherit;font-size:0.9rem;width:220px;transition:all 0.3s;background:var(--white)}
+.search-bar input:focus{outline:none;border-color:var(--primary);width:280px}
+.search-bar button{position:absolute;right:5px;background:var(--primary);color:var(--white);border:none;width:32px;height:32px;border-radius:50%;cursor:pointer;transition:all 0.3s}
+.search-bar button:hover{background:var(--accent)}
+.cart-icon{position:relative;cursor:pointer;padding:0.5rem;transition:all 0.3s}
+.cart-icon:hover{transform:scale(1.1)}
+.cart-icon i{font-size:1.3rem;color:var(--primary)}
+.cart-count{position:absolute;top:-2px;right:-2px;background:var(--danger);color:var(--white);font-size:0.7rem;font-weight:700;width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center}
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding-top:80px}
+.hero-bg{position:absolute;top:0;right:0;width:55%;height:100%;background:linear-gradient(135deg,rgba(139,105,20,0.05) 0%,rgba(212,168,75,0.1) 100%);border-radius:0 0 0 100px;z-index:-1}
+.hero-container{max-width:1200px;margin:0 auto;padding:0 2rem;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.hero-content{max-width:600px}
+.hero-badge{display:inline-flex;align-items:center;gap:0.5rem;background:rgba(139,105,20,0.1);color:var(--primary);padding:0.5rem 1rem;border-radius:50px;font-size:0.9rem;font-weight:600;margin-bottom:1.5rem}
+.hero-title{font-size:3.5rem;font-weight:800;line-height:1.1;margin-bottom:1.5rem;color:var(--text)}
+.hero-title span{color:var(--primary);display:block}
+.hero-subtitle{font-size:1.1rem;color:var(--text-light);margin-bottom:2rem;line-height:1.8}
+.hero-buttons{display:flex;gap:1rem;flex-wrap:wrap}
+.btn-primary{background:var(--primary);color:var(--white);padding:1rem 2rem;border-radius:50px;text-decoration:none;font-weight:600;display:inline-flex;align-items:center;gap:0.5rem;transition:all 0.3s;border:none;cursor:pointer;font-size:1rem}
+.btn-primary:hover{background:var(--accent);transform:translateY(-3px);box-shadow:0 10px 30px rgba(139,105,20,0.3)}
+.btn-outline{border:2px solid var(--primary);color:var(--primary);padding:1rem 2rem;border-radius:50px;text-decoration:none;font-weight:600;display:inline-flex;align-items:center;gap:0.5rem;transition:all 0.3s;background:transparent}
+.btn-outline:hover{background:var(--primary);color:var(--white);transform:translateY(-3px)}
+.hero-image{position:relative}
+.hero-slider{position:relative;width:100%;height:90vh;border-radius:20px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.15);background-color:#f0ebe5}
+.hero-slider .slide{position:absolute;top:0;left:0;width:100%;height:100%;opacity:0;transition:opacity 1s ease-in-out;background-size:contain;background-position:center;background-repeat:no-repeat}
+.hero-slider .slide.active{opacity:1}
+.slide-content{position:absolute;bottom:30px;left:30px;background:rgba(139,105,20,0.9);color:white;padding:20px 30px;border-radius:15px;backdrop-filter:blur(10px);transform:translateY(20px);opacity:0;transition:all 0.5s ease 0.3s}
+.hero-slider .slide.active .slide-content{transform:translateY(0);opacity:1}
+.slider-nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(139,105,20,0.8);color:white;border:none;width:50px;height:50px;border-radius:50%;cursor:pointer;font-size:1.2rem;display:flex;align-items:center;justify-content:center;transition:all 0.3s;z-index:10}
+.slider-nav:hover{background:rgba(139,105,20,1);transform:translateY(-50%) scale(1.1)}
+.slider-nav.prev{left:20px}
+.slider-nav.next{right:20px}
+.slider-dots{position:absolute;bottom:20px;right:30px;display:flex;gap:10px;z-index:10}
+.slider-dot{width:12px;height:12px;border-radius:50%;background:rgba(255,255,255,0.5);cursor:pointer;transition:all 0.3s;border:2px solid transparent}
+.slider-dot.active{background:white;transform:scale(1.2)}
+.hero-float-card{position:absolute;bottom:-30px;left:-30px;background:var(--white);padding:1.5rem;border-radius:20px;box-shadow:var(--shadow-hover);display:flex;align-items:center;gap:1rem;z-index:10}
+.float-icon{width:50px;height:50px;background:rgba(139,105,20,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--primary);font-size:1.2rem}
+.float-text h4{font-size:1.5rem;font-weight:700;color:var(--text)}
+.float-text p{font-size:0.9rem;color:var(--text-light)}
+.stats-bar{background:var(--primary);padding:3rem 0;margin-top:4rem}
+.stats-container{max-width:1200px;margin:0 auto;padding:0 2rem;display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;text-align:center}
+.stat-item h3{font-size:2.5rem;font-weight:800;color:var(--white);margin-bottom:0.5rem}
+.stat-item p{color:rgba(255,255,255,0.9);font-size:1rem}
+.section{padding:6rem 0}
+.section-header{text-align:center;max-width:600px;margin:0 auto 4rem}
+.section-label{display:inline-block;background:rgba(139,105,20,0.1);color:var(--primary);padding:0.4rem 1.2rem;border-radius:50px;font-size:0.85rem;font-weight:600;margin-bottom:1rem}
+.section-title{font-size:2.5rem;font-weight:800;margin-bottom:1rem}
+.section-desc{color:var(--text-light);font-size:1.05rem}
+.about-grid{max-width:1200px;margin:0 auto;padding:0 2rem;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.about-image{position:relative}
+.about-image img{width:100%;border-radius:20px;box-shadow:var(--shadow-hover)}
+.about-image::before{content:'';position:absolute;top:20px;left:20px;width:100%;height:100%;border:3px solid var(--primary-light);border-radius:20px;z-index:-1}
+.about-content h3{font-size:2rem;font-weight:700;margin-bottom:1.5rem}
+.about-content p{color:var(--text-light);margin-bottom:1.5rem;font-size:1.05rem}
+.about-features{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:2rem}
+.about-feature{display:flex;align-items:flex-start;gap:1rem}
+.about-feature i{color:var(--primary);font-size:1.3rem;margin-top:0.2rem}
+.about-feature h4{font-weight:600;margin-bottom:0.3rem}
+.about-feature p{font-size:0.9rem;margin:0}
+.categories-grid{max-width:1200px;margin:0 auto;padding:0 2rem;display:grid;grid-template-columns:repeat(4,1fr);gap:2rem}
+.category-card{position:relative;border-radius:20px;overflow:hidden;height:320px;cursor:pointer;box-shadow:var(--shadow);transition:all 0.4s ease}
+.category-card:hover{transform:translateY(-10px);box-shadow:var(--shadow-hover)}
+.category-card img{width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease}
+.category-card:hover img{transform:scale(1.1)}
+.category-overlay{position:absolute;bottom:0;left:0;right:0;padding:2rem;background:linear-gradient(to top,rgba(0,0,0,0.8) 0%,transparent 100%);color:var(--white)}
+.category-overlay h3{font-size:1.4rem;font-weight:700;margin-bottom:0.5rem}
+.category-overlay a{color:var(--primary-light);text-decoration:none;font-weight:600;display:inline-flex;align-items:center;gap:0.5rem;transition:gap 0.3s}
+.category-overlay a:hover{gap:1rem}
+.filter-tabs{max-width:1200px;margin:0 auto 3rem;padding:0 2rem;display:flex;justify-content:center;gap:1rem;flex-wrap:wrap}
+.filter-tab{padding:0.8rem 1.5rem;border:2px solid var(--primary);background:transparent;color:var(--primary);border-radius:50px;cursor:pointer;font-weight:600;font-family:inherit;transition:all 0.3s;font-size:0.95rem}
+.filter-tab:hover,.filter-tab.active{background:var(--primary);color:var(--white);transform:translateY(-2px)}
+.products-grid{max-width:1200px;margin:0 auto;padding:0 2rem;display:grid;grid-template-columns:repeat(4,1fr);gap:2rem}
+.product-card{background:var(--white);border-radius:20px;overflow:hidden;box-shadow:var(--shadow);transition:all 0.4s ease}
+.product-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-hover)}
+.product-card.hidden{display:none}
+.product-image{position:relative;height:220px;overflow:hidden}
+.product-image img{width:100%;height:100%;object-fit:cover;transition:transform 0.5s}
+.product-card:hover .product-image img{transform:scale(1.1)}
+.product-badge{position:absolute;top:1rem;left:1rem;background:var(--primary);color:var(--white);padding:0.3rem 0.8rem;border-radius:50px;font-size:0.75rem;font-weight:600}
+.product-info{padding:1.5rem}
+.product-info h3{font-size:1.1rem;font-weight:700;margin-bottom:0.5rem}
+.product-info p{color:var(--text-light);font-size:0.9rem;margin-bottom:1rem}
+.product-footer{display:flex;justify-content:space-between;align-items:center}
+.product-price{font-size:1.2rem;font-weight:700;color:var(--primary)}
+.product-btn{width:40px;height:40px;border-radius:50%;background:var(--primary);color:var(--white);border:none;cursor:pointer;transition:all 0.3s;display:flex;align-items:center;justify-content:center}
+.product-btn:hover{background:var(--accent);transform:scale(1.1)}
+.order-btn{width:100%;background:var(--primary);color:var(--white);padding:0.8rem;border:none;border-radius:10px;font-weight:600;cursor:pointer;transition:all 0.3s;margin-top:1rem;font-family:inherit}
+.order-btn:hover{background:var(--accent);transform:translateY(-2px)}
+.gallery-grid{max-width:1200px;margin:0 auto;padding:0 2rem;display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+.gallery-item{border-radius:15px;overflow:hidden;height:250px;position:relative;cursor:pointer}
+.gallery-item img{width:100%;height:100%;object-fit:cover;transition:transform 0.5s}
+.gallery-item:hover img{transform:scale(1.1)}
+.gallery-item.large{grid-column:span 2;grid-row:span 2;height:100%}
+.features-grid{max-width:1200px;margin:0 auto;padding:0 2rem;display:grid;grid-template-columns:repeat(4,1fr);gap:2rem}
+.feature-card{background:var(--white);padding:2.5rem 2rem;border-radius:20px;text-align:center;box-shadow:var(--shadow);transition:all 0.4s ease}
+.feature-card:hover{transform:translateY(-10px);box-shadow:var(--shadow-hover)}
+.feature-icon{width:70px;height:70px;background:rgba(139,105,20,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;color:var(--primary);font-size:1.8rem}
+.feature-card h3{font-size:1.2rem;font-weight:700;margin-bottom:0.8rem}
+.feature-card p{color:var(--text-light);font-size:0.95rem}
+.testimonials-grid{max-width:1200px;margin:0 auto;padding:0 2rem;display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
+.testimonial-card{background:var(--white);padding:2rem;border-radius:20px;box-shadow:var(--shadow)}
+.testimonial-stars{color:var(--primary);margin-bottom:1rem}
+.testimonial-text{color:var(--text-light);font-size:0.95rem;margin-bottom:1.5rem;line-height:1.8}
+.testimonial-author{display:flex;align-items:center;gap:1rem}
+.testimonial-author img{width:50px;height:50px;border-radius:50%;object-fit:cover}
+.author-info h4{font-weight:600;margin-bottom:0.2rem}
+.author-info p{font-size:0.85rem;color:var(--text-light)}
+.contact-grid{max-width:1200px;margin:0 auto;padding:0 2rem;display:grid;grid-template-columns:1fr 1fr;gap:4rem}
+.contact-info h3{font-size:2rem;font-weight:700;margin-bottom:1.5rem}
+.contact-details{margin-top:2rem}
+.contact-item{display:flex;align-items:center;gap:1rem;margin-bottom:1.5rem}
+.contact-item i{width:50px;height:50px;background:rgba(139,105,20,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--primary);font-size:1.2rem}
+.contact-item h4{font-weight:600;margin-bottom:0.2rem}
+.contact-item p{color:var(--text-light);font-size:0.9rem}
+.contact-form{background:var(--white);padding:2.5rem;border-radius:20px;box-shadow:var(--shadow)}
+.form-group{margin-bottom:1.5rem}
+.form-group label{display:block;margin-bottom:0.5rem;font-weight:500}
+.form-group input,.form-group textarea,.form-group select{width:100%;padding:1rem;border:2px solid #e0e0e0;border-radius:10px;font-family:inherit;transition:border-color 0.3s}
+.form-group input:focus,.form-group textarea:focus,.form-group select:focus{outline:none;border-color:var(--primary)}
+.form-group textarea{resize:vertical;min-height:120px}
+.submit-btn{width:100%;background:var(--primary);color:var(--white);padding:1rem;border:none;border-radius:10px;font-size:1rem;font-weight:600;cursor:pointer;transition:all 0.3s}
+.submit-btn:hover{background:var(--accent);transform:translateY(-2px)}
+.footer{background:var(--text);color:var(--white);padding:4rem 0 2rem}
+.footer-grid{max-width:1200px;margin:0 auto;padding:0 2rem;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem}
+.footer-brand h3{font-size:1.5rem;margin-bottom:1rem;color:var(--primary-light)}
+.footer-brand p{color:rgba(255,255,255,0.7);line-height:1.8}
+.footer-column h4{font-size:1.1rem;margin-bottom:1.5rem;color:var(--white)}
+.footer-column ul{list-style:none}
+.footer-column li{margin-bottom:0.8rem}
+.footer-column a{color:rgba(255,255,255,0.7);text-decoration:none;transition:color 0.3s}
+.footer-column a:hover{color:var(--primary-light)}
+.footer-social{text-align:center;margin-bottom:2rem}
+.footer-social a{display:inline-flex;align-items:center;gap:0.5rem;padding:0.8rem 1.5rem;border-radius:50px;text-decoration:none;font-weight:600;margin:0 0.5rem;transition:all 0.3s}
+.footer-social a:hover{transform:translateY(-3px)}
+.footer-social .telegram{background:#0088cc;color:white}
+.footer-social .instagram{background:#e4405f;color:white}
+.footer-bottom{max-width:1200px;margin:0 auto;padding:2rem 2rem 0;border-top:1px solid rgba(255,255,255,0.1);display:flex;justify-content:space-between;align-items:center}
+.footer-bottom p{color:rgba(255,255,255,0.5);font-size:0.9rem}
+.modal-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6);backdrop-filter:blur(5px);z-index:2000;display:none;align-items:center;justify-content:center;opacity:0;transition:opacity 0.3s}
+.modal-overlay.active{display:flex;opacity:1}
+.modal{background:var(--white);border-radius:20px;max-width:600px;width:90%;max-height:90vh;overflow-y:auto;box-shadow:0 20px 60px rgba(0,0,0,0.3);transform:scale(0.9);transition:transform 0.3s}
+.modal-overlay.active .modal{transform:scale(1)}
+.modal-header{padding:1.5rem 2rem;border-bottom:1px solid #eee;display:flex;justify-content:space-between;align-items:center}
+.modal-header h3{font-size:1.3rem;font-weight:700}
+.modal-close{background:none;border:none;font-size:1.5rem;color:var(--text-light);cursor:pointer;transition:color 0.3s}
+.modal-close:hover{color:var(--danger)}
+.modal-body{padding:2rem}
+.modal-footer{padding:1.5rem 2rem;border-top:1px solid #eee;display:flex;gap:1rem;justify-content:flex-end}
+.cart-modal{max-width:500px}
+.cart-item{display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid #eee;align-items:center}
+.cart-item img{width:80px;height:80px;border-radius:10px;object-fit:cover}
+.cart-item-info{flex:1}
+.cart-item-info h4{font-size:1rem;margin-bottom:0.3rem}
+.cart-item-info p{color:var(--text-light);font-size:0.85rem;margin-bottom:0.3rem}
+.cart-item-price{font-weight:700;color:var(--primary)}
+.cart-item-remove{background:none;border:none;color:var(--danger);cursor:pointer;font-size:1.2rem;transition:transform 0.3s}
+.cart-item-remove:hover{transform:scale(1.2)}
+.cart-empty{text-align:center;padding:3rem;color:var(--text-light)}
+.cart-empty i{font-size:3rem;margin-bottom:1rem;color:var(--primary-light)}
+.cart-total{display:flex;justify-content:space-between;padding:1rem 0;font-size:1.2rem;font-weight:700;border-top:2px solid var(--primary)}
+.order-product-preview{display:flex;gap:1rem;margin-bottom:1.5rem;padding:1rem;background:var(--bg);border-radius:15px}
+.order-product-preview img{width:100px;height:100px;border-radius:10px;object-fit:cover}
+.order-product-preview h4{font-size:1.1rem;margin-bottom:0.3rem}
+.order-product-preview .price{font-size:1.2rem;font-weight:700;color:var(--primary)}
+.option-group{margin-bottom:1.5rem}
+.option-group label{display:block;margin-bottom:0.5rem;font-weight:600}
+.option-buttons{display:flex;gap:0.5rem;flex-wrap:wrap}
+.option-btn{padding:0.5rem 1rem;border:2px solid #e0e0e0;background:var(--white);border-radius:10px;cursor:pointer;font-family:inherit;transition:all 0.3s;font-size:0.9rem}
+.option-btn:hover{border-color:var(--primary-light)}
+.option-btn.selected{border-color:var(--primary);background:var(--primary);color:var(--white)}
+.size-inputs{display:grid;grid-template-columns:repeat(3,1fr);gap:0.5rem}
+.size-inputs input{text-align:center}
+.customer-form{margin-top:1.5rem;padding-top:1.5rem;border-top:2px solid #eee}
+.admin-notif{position:fixed;top:20px;right:20px;background:var(--success);color:var(--white);padding:1rem 1.5rem;border-radius:15px;box-shadow:0 10px 30px rgba(0,0,0,0.2);z-index:3000;display:none;align-items:center;gap:0.8rem;animation:slideIn 0.5s ease}
+.admin-notif.show{display:flex}
+.admin-notif i{font-size:1.3rem}
+@keyframes slideIn{from{transform:translateX(100%);opacity:0}to{transform:translateX(0);opacity:1}}
+@keyframes slideOut{from{transform:translateX(0);opacity:1}to{transform:translateX(100%);opacity:0}}
+.reveal{opacity:1;transform:translateY(0);transition:all 0.8s ease}
+@media (max-width:1024px){
+.hero-container{grid-template-columns:1fr}
+.hero-title{font-size:2.5rem}
+.categories-grid{grid-template-columns:repeat(2,1fr)}
+.products-grid{grid-template-columns:repeat(2,1fr)}
+.features-grid{grid-template-columns:repeat(2,1fr)}
+.footer-grid{grid-template-columns:1fr 1fr}
+.hero-slider{height:60vh}
+.search-bar input{width:160px}
+.search-bar input:focus{width:200px}
 }
-
-.hero-slider .slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-    background-size: cover;
-    background-position: center;
-        background-repeat: no-repeat;
-    background-color: #f0ebe5;
+.social-icon-btn:hover{transform:translateY(-8px) scale(1.15);box-shadow:0 12px 25px rgba(0,0,0,0.25)!important}
+@media (max-width:768px){
+.nav-links{display:none;position:absolute;top:100%;left:0;width:100%;background:var(--white);flex-direction:column;padding:1rem;box-shadow:var(--shadow)}
+.nav-links.active{display:flex}
+.mobile-menu-btn{display:block}
+.hero-title{font-size:2rem}
+.stats-container{grid-template-columns:repeat(2,1fr)}
+.about-grid,.contact-grid{grid-template-columns:1fr}
+.categories-grid,.products-grid,.features-grid,.testimonials-grid{grid-template-columns:1fr}
+.gallery-grid{grid-template-columns:repeat(2,1fr)}
+.footer-grid{grid-template-columns:1fr}
+.footer-bottom{flex-direction:column;gap:1rem;text-align:center}
+.hero-slider{height:50vh}
+.filter-tabs{gap:0.5rem}
+.filter-tab{padding:0.6rem 1rem;font-size:0.85rem}
+.modal{width:95%}
+.order-product-preview{flex-direction:column;text-align:center}
+.order-product-preview img{margin:0 auto}
 }
-
-.hero-slider .slide.active {
-    opacity: 1;
-}
-
-.slide-content {
-    position: absolute;
-    bottom: 30px;
-    left: 30px;
-    background: rgba(139, 105, 20, 0.9);
-    color: white;
-    padding: 20px 30px;
-    border-radius: 15px;
-    backdrop-filter: blur(10px);
-    transform: translateY(20px);
-    opacity: 0;
-    transition: all 0.5s ease 0.3s;
-}
-
-.hero-slider .slide.active .slide-content {
-    transform: translateY(0);
-    opacity: 1;
-}
-
-.slider-nav {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(139, 105, 20, 0.8);
-    color: white;
-    border: none;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 1.2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s;
-    z-index: 10;
-}
-
-.slider-nav:hover {
-    background: rgba(139, 105, 20, 1);
-    transform: translateY(-50%) scale(1.1);
-}
-
-.slider-nav.prev { left: 20px; }
-.slider-nav.next { right: 20px; }
-
-.slider-dots {
-    position: absolute;
-    bottom: 20px;
-    right: 30px;
-    display: flex;
-    gap: 10px;
-    z-index: 10;
-}
-
-.slider-dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: rgba(255,255,255,0.5);
-    cursor: pointer;
-    transition: all 0.3s;
-    border: 2px solid transparent;
-}
-
-.slider-dot.active {
-    background: white;
-    transform: scale(1.2);
-}
-          </style>
+</style>
+<base target="_blank">
 </head>
-    <body>
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#" class="logo"><i class="fas fa-couch"></i> Raxmon Mebel</a>
-            <ul class="nav-links">
-                <li><a href="#home">Bosh sahifa</a></li>
-                <li><a href="#about">Biz haqimizda</a></li>
-                <li><a href="#categories">Kategoriyalar</a></li>
-                <li><a href="#products">Mahsulotlar</a></li>
-                <li><a href="#gallery">Galereya</a></li>
-                <li><a href="#contact" class="nav-cta">Bog'lanish</a></li>
-            </ul>
-            <button class="mobile-menu-btn" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
-        </div>
-    </nav>
-    <section class="hero" id="home">
-        <div class="hero-bg"></div>
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-badge"><i class="fas fa-star"></i> 26+ yillik tajriba</div>
-                <h1 class="hero-title">Sifatli mebel — <span>uyning go'zalligi</span></h1>
-                <p class="hero-subtitle">Raxmon Mebel — bu nafaqat mebel, balki uyingiz uchun qulaylik va go'zallik. Biz sizga eng yaxshi sifat va dizaynni taklif qilamiz.</p>
-                <div class="hero-buttons">
-                    <a href="#categories" class="btn btn-primary"><i class="fas fa-th-large"></i> Katalog</a>
-                    <a href="#contact" class="btn btn-outline"><i class="fas fa-phone"></i> Bog'lanish</a>
-                </div>
-            </div>
-           <div class="hero-image">
-    <div class="hero-slider" id="heroSlider">
-        <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&h=600&fit=crop')">
-            <div class="slide-content">
-                <h3>"Prestij" divan</h3>
-                <p>Zamonaviy uslubdagi yumshoq divan</p>
-            </div>
-        </div>
-        <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&h=600&fit=crop')">
-            <div class="slide-content">
-                <h3>"Royal" yotoq</h3>
-                <p>2x1.8m, yog'och karkas</p>
-            </div>
-        </div>
-        <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=600&fit=crop')">
-            <div class="slide-content">
-                <h3>"Modern" oshxona</h3>
-                <p>3 metrli oshxona to'plami</p>
-            </div>
-                    <button class="slider-nav prev" onclick="changeSlide(-1)"><i class="fas fa-chevron-left"></i></button>
-        <button class="slider-nav next" onclick="changeSlide(1)"><i class="fas fa-chevron-right"></i></button>
-        <div class="slider-dots">
-            <div class="slider-dot active" onclick="goToSlide(0)"></div>
-            <div class="slider-dot" onclick="goToSlide(1)"></div>
-            <div class="slider-dot" onclick="goToSlide(2)"></div>
-        </div>
-    </div>
-    <div class="hero-float-card">
-        <div class="float-icon"><i class="fas fa-check-circle"></i></div>
-        <div class="float-text"><h4>5000+</h4><p>Mamnun mijozlar</p></div>
-    </div>
+<body>
+<div class="admin-notif" id="adminNotif">
+<i class="fas fa-check-circle"></i>
+<div><strong>Yangi buyurtma!</strong><p style="font-size:0.85rem;margin-top:0.2rem">Mijoz ma'lumotlari yuborildi</p></div>
 </div>
-        </div>
-               </div>
-    </section>
-    <div class="stats-bar">
-        <div class="stats-container">
-            <div class="stat-item"><h3>26+</h3><p>Yillik tajriba</p></div>
-            <div class="stat-item"><h3>5000+</h3><p>Mamnun mijozlar</p></div>
-            <div class="stat-item"><h3>200+</h3><p>Mahsulot turlari</p></div>
-            <div class="stat-item"><h3>50+</h3><p>Usta xodimlar</p></div>
-        </div>
-    </div>
-    <section class="section" id="about">
-        <div class="section-header reveal">
-            <span class="section-label">Biz haqimizda</span>
-            <h2 class="section-title">Nima uchun bizni tanlashadi?</h2>
-            <p class="section-desc">Raxmon Mebel — bu sifat, ishonch va zamonaviy dizayn uyg'unligi.</p>
-        </div>
-        <div class="about-grid">
-            <div class="about-image reveal"><img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=500&h=400&fit=crop" alt="Showroom"></div>
-            <div class="about-content reveal">
-                <h3>Sifat va dizayn bir joyda</h3>
-                <p>2000-yildan beri biz O'zbekiston bo'ylab minglab oilalarga sifatli va zamonaviy mebel yetkazib bermoqdamiz. Har bir mahsulotimizda sizning qulayligingiz va uyingiz go'zalligi uchun qayg'uramiz.</p>
-                <p>Faqatgina natural yog'och, ekologik toza materiallar va zamonaviy texnologiyalar — bizning ishlab chiqarishimizning asosiy tamoyillaridir.</p>
-                <div class="about-features">
-                    <div class="about-feature"><i class="fas fa-medal"></i><div><h4>Yuqori sifat</h4><p>Eng yaxshi materiallar</p></div></div>
-                    <div class="about-feature"><i class="fas fa-palette"></i><div><h4>Zamonaviy dizayn</h4><p>Eng so'nggi trendlar</p></div></div>
-                    <div class="about-feature"><i class="fas fa-hand-holding-heart"></i><div><h4>Individual yondashuv</h4><p>Har bir mijoz uchun maxsus</p></div></div>
-                    <div class="about-feature"><i class="fas fa-truck"></i><div><h4>Bepul yetkazib berish</h4><p>Toshkent bo'ylab</p></div></div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section" id="categories" style="background: var(--white);">
-        <div class="section-header reveal">
-            <span class="section-label">Kategoriyalar</span>
-            <h2 class="section-title">Mebel kategoriyalari</h2>
-            <p class="section-desc">Uyingizning har bir xonasi uchun maxsus mebel to'plamlari.</p>
-        </div>
-        <div class="categories-grid">
-            <div class="category-card reveal"><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400&h=320&fit=crop" alt="Bedroom"><div class="category-overlay"><h3>Yotoq xonasi</h3><a href="#">Batafsil <i class="fas fa-arrow-right"></i></a></div></div>
-            <div class="category-card reveal"><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=320&fit=crop" alt="Kitchen"><div class="category-overlay"><h3>Oshxona</h3><a href="#">Batafsil <i class="fas fa-arrow-right"></i></a></div></div>
-            <div class="category-card reveal"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=400&h=320&fit=crop" alt="Living Room"><div class="category-overlay"><h3>Mehmonxona</h3><a href="#">Batafsil <i class="fas fa-arrow-right"></i></a></div></div>
-            <div class="category-card reveal"><img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=400&h=320&fit=crop" alt="Children Room"><div class="category-overlay"><h3>Bolalar xonasi</h3><a href="#">Batafsil <i class="fas fa-arrow-right"></i></a></div></div>
-            <div class="category-card reveal"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&h=320&fit=crop" alt="Office"><div class="category-overlay"><h3>Ofis mebellari</h3><a href="#">Batafsil <i class="fas fa-arrow-right"></i></a></div></div>
-            <div class="category-card reveal"><img src="https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?w=400&h=320&fit=crop" alt="Dining"><div class="category-overlay"><h3>Ovqatlanish zonasi</h3><a href="#">Batafsil <i class="fas fa-arrow-right"></i></a></div></div>
-        </div>
-    </section>
-    <section class="section" id="products">
-        <div class="section-header reveal">
-            <span class="section-label">Mahsulotlar</span>
-            <h2 class="section-title">Mashhur mahsulotlar</h2>
-            <p class="section-desc">Eng ko'p buyurtma qilinadigan va mijozlar sevib tanlaydigan mebellar.</p>
-        </div>
-        <div class="products-grid">
-            <div class="product-card reveal"><div class="product-image"><img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=300&h=220&fit=crop" alt="Sofa"><span class="product-badge">Yangi</span></div><div class="product-info"><h3>"Prestij" divan</h3><p>Zamonaviy uslubdagi yumshoq divan</p><div class="product-footer"><span class="product-price">4 500 000 so'm</span><button class="product-btn"><i class="fas fa-shopping-cart"></i></button></div></div></div>
-            <div class="product-card reveal"><div class="product-image"><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=300&h=220&fit=crop" alt="Bed"></div><div class="product-info"><h3>"Royal" yotoq</h3><p>2x1.8m, yog'och karkas</p><div class="product-footer"><span class="product-price">3 200 000 so'm</span><button class="product-btn"><i class="fas fa-shopping-cart"></i></button></div></div></div>
-            <div class="product-card reveal"><div class="product-image"><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=300&h=220&fit=crop" alt="Kitchen Set"><span class="product-badge">Chegirma</span></div><div class="product-info"><h3>"Modern" oshxona</h3><p>3 metrli oshxona to'plami</p><div class="product-footer"><span class="product-price">8 900 000 so'm</span><button class="product-btn"><i class="fas fa-shopping-cart"></i></button></div></div></div>
-            <div class="product-card reveal"><div class="product-image"><img src="https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?w=300&h=220&fit=crop" alt="Dining Table"></div><div class="product-info"><h3>"Klassik" stol</h3><p>6 kishilik ovqatlanish stoli</p><div class="product-footer"><span class="product-price">2 800 000 so'm</span><button class="product-btn"><i class="fas fa-shopping-cart"></i></button></div></div></div>
-            <div class="product-card reveal"><div class="product-image"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=300&h=220&fit=crop" alt="Office Chair"></div><div class="product-info"><h3>"Ergo" ofis kreslosi</h3><p>Orqa muhofaza bilan</p><div class="product-footer"><span class="product-price">1 500 000 so'm</span><button class="product-btn"><i class="fas fa-shopping-cart"></i></button></div></div></div>
-            <div class="product-card reveal"><div class="product-image"><img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=300&h=220&fit=crop" alt="Wardrobe"><span class="product-badge">Top</span></div><div class="product-info"><h3>"Lyuks" shkaf</h3><p>4 eshikli kiyim shkafi</p><div class="product-footer"><span class="product-price">5 600 000 so'm</span><button class="product-btn"><i class="fas fa-shopping-cart"></i></button></div></div></div>
-            <div class="product-card reveal"><div class="product-image"><img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=300&h=220&fit=crop" alt="TV Stand"></div><div class="product-info"><h3>"Smart" TV tumbasi</h3><p>Zamonaviy dizaynda</p><div class="product-footer"><span class="product-price">1 800 000 so'm</span><button class="product-btn"><i class="fas fa-shopping-cart"></i></button></div></div></div>
-            <div class="product-card reveal"><div class="product-image"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=300&h=220&fit=crop" alt="Coffee Table"></div><div class="product-info"><h3>"Minimal" jurnal stoli</h3><p>Yog'och + shisha</p><div class="product-footer"><span class="product-price">950 000 so'm</span><button class="product-btn"><i class="fas fa-shopping-cart"></i></button></div></div></div>
-             <div class="product-card reveal"><div class="product-image"><img src="https://i.postimg.cc/1fx61JQJ/photo-2025-12-03-07-42-08.jpg" alt="Yotoqxona komplekti"><span class="product-badge">Yangi</span></div><div class="product-info"><h3>"Yotoqxona komplekti"</h3><p>To'liq yotoqxona mebel to'plami</p><div class="product-footer"><span class="product-price">17 900 000 so'm</span><button class="product-btn"><i class="fas fa-shopping-cart"></i></button></div></div></div> 
-        </div>
-    </section>
-    <section class="why-section" id="why">
-        <div class="section-header reveal">
-            <span class="section-label" style="background: rgba(255,255,255,0.2); color: var(--white);">Afzalliklar</span>
-            <h2 class="section-title">Nima uchun biz?</h2>
-            <p class="section-desc">Biz sizga eng yaxshi xizmat va sifatni taklif qilishga intilamiz.</p>
-        </div>
-        <div class="why-grid">
-            <div class="why-card reveal"><div class="why-icon"><i class="fas fa-shield-alt"></i></div><h3>Sifat kafolati</h3><p>Har bir mahsulotimiz 5 yil kafolat bilan ta'minlanadi. Sifat — bizning ustuvorligimiz.</p></div>
-            <div class="why-card reveal"><div class="why-icon"><i class="fas fa-truck-fast"></i></div><h3>Bepul yetkazib berish</h3><p>Toshkent shahri bo'ylab bepul yetkazib berish va o'rnatish xizmati.</p></div>
-            <div class="why-card reveal"><div class="why-icon"><i class="fas fa-ruler-combined"></i></div><h3>Individual buyurtma</h3><p>O'zingizning xohishingiz va o'lchamlaringiz bo'yicha maxsus mebel yasatish.</p></div>
-            <div class="why-card reveal"><div class="why-icon"><i class="fas fa-headset"></i></div><h3>24/7 qo'llab-quvvatlash</h3><p>Mijozlarimizga har vaqtda yordam berishga tayyormiz.</p></div>
-        </div>
-    </section>
-    <section class="section" id="gallery" style="background: var(--white);">
-        <div class="section-header reveal">
-            <span class="section-label">Galereya</span>
-            <h2 class="section-title">Bajarilgan loyihalar</h2>
-            <p class="section-desc">Bizning mijozlarimizning uylaridan lavhalar.</p>
-        </div>
-        <div class="gallery-grid">
-            <div class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=400&h=280&fit=crop" alt="Project 1"><div class="gallery-overlay"><i class="fas fa-search-plus"></i></div></div>
-            <div class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=400&h=600&fit=crop" alt="Project 2"><div class="gallery-overlay"><i class="fas fa-search-plus"></i></div></div>
-            <div class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=400&h=280&fit=crop" alt="Project 3"><div class="gallery-overlay"><i class="fas fa-search-plus"></i></div></div>
-            <div class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400&h=280&fit=crop" alt="Project 4"><div class="gallery-overlay"><i class="fas fa-search-plus"></i></div></div>
-            <div class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400&h=280&fit=crop" alt="Project 5"><div class="gallery-overlay"><i class="fas fa-search-plus"></i></div></div>
-            <div class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=280&fit=crop" alt="Project 6"><div class="gallery-overlay"><i class="fas fa-search-plus"></i></div></div>
-        </div>
-    </section>
-    <section class="section" id="testimonials">
-        <div class="section-header reveal">
-            <span class="section-label">Fikrlar</span>
-            <h2 class="section-title">Mijozlarimiz nima deydi?</h2>
-            <p class="section-desc">Bizning xizmatlarimiz haqida mijozlarimizning fikrlari.</p>
-        </div>
-        <div class="testimonials-grid">
-            <div class="testimonial-card reveal">
-                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                <p class="testimonial-text">Raxmon Mebeldan oshxona to'plami buyurtma qildim. Sifatidan juda mamnunman! Bepul yetkazib berish va o'rnatish xizmati ham ajoyib.</p>
-                <div class="testimonial-author"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop&crop=face" alt="User" class="author-avatar"><div class="author-info"><h4>Azizbek Karimov</h4><p>Toshkent</p></div></div>
-            </div>
-            <div class="testimonial-card reveal">
-                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                <p class="testimonial-text">Uyim uchun to'liq mebel to'plami buyurtma qildim. Dizaynerlarimiz bilan birga loyihalashdi. Natijadan juda xursandman!</p>
-                <div class="testimonial-author"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=50&h=50&fit=crop&crop=face" alt="User" class="author-avatar"><div class="author-info"><h4>Dilnoza Rahimova</h4><p>Samarqand</p></div></div>
-            </div>
-            <div class="testimonial-card reveal">
-                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
-                <p class="testimonial-text">Ofisimiz uchun 15 ta ish stoli va kreslolar buyurtma qildik. Sifat va narx nisbati juda yaxshi. Hamkorlikdan mamnunman.</p>
-                <div class="testimonial-author"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=50&h=50&fit=crop&crop=face" alt="User" class="author-avatar"><div class="author-info"><h4>Bekzod Tursunov</h4><p>Toshkent</p></div></div>
-            </div>
-        </div>
-    </section>
-    <section class="section" id="contact" style="background: var(--white);">
-        <div class="section-header reveal">
-            <span class="section-label">Aloqa</span>
-            <h2 class="section-title">Biz bilan bog'laning</h2>
-            <p class="section-desc">Savollaringiz bormi? Bizga yozing, tez orada javob beramiz.</p>
-        </div>
-        <div class="contact-grid">
-            <div class="contact-info reveal">
-                <h3>Aloqa ma'lumotlari</h3>
-                <p>Bizga qo'ng'iroq qiling yoki xabar yozing. Sizga yordam berishdan xursand bo'lamiz.</p>
-                <div class="contact-item"><i class="fas fa-location-dot"></i><div><h4>Manzil</h4><p>Samarqand viloyati, Urgut shahri, Mergancha MFY, Katta masjid yonida</p></div></div>
-                <div class="contact-item"><i class="fas fa-phone"></i><div><h4>Telefon</h4><p>+998 99 773 21 11</p></div></div>
-                <div class="contact-item"><i class="fas fa-envelope"></i><div><h4>Email</h4><p>raxmonmebel@mail.ru</p></div></div>
-                <div class="contact-item"><i class="fas fa-clock"></i><div><h4>Ish vaqti</h4><p>Dushanba - Shanba: 09:00 - 19:00<br>Yakshanba: 10:00 - 16:00</p></div></div>
-                <div class="social-links">
-                    <a href="https://instagram.com/raxmon_ota_mebel_saloni" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-telegram"></i></a>
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-whatsapp"></i></a>
-                </div>
-            </div>
-            <div class="contact-form reveal">
-                <form onsubmit="event.preventDefault(); alert('Xabaringiz yuborildi! Tez orada siz bilan bog\'lanamiz.');">
-                    <div class="form-group"><label>Ismingiz</label><input type="text" placeholder="Ismingizni kiriting" required></div>
-                    <div class="form-group"><label>Telefon raqamingiz</label><input type="tel" placeholder="+998 __ ___ __ __" required></div>
-                    <div class="form-group"><label>Xabaringiz</label><textarea placeholder="Xabaringizni yozing..." required></textarea></div>
-                    <button type="submit" class="submit-btn"><i class="fas fa-paper-plane"></i> Yuborish</button>
-                </form>
-            </div>
-        </div>
-        <div class="map-container reveal">
-            <div class="map-placeholder"><i class="fas fa-map-marker-alt"></i><p>Xarita joylashuvi</p></div>
-        </div>
-    </section>
-    <footer class="footer">
-        <div class="footer-grid">
-            <div class="footer-brand">
-                <h3><i class="fas fa-couch"></i> Raxmon Mebel</h3>
-                <p>26 yildan ortiq vaqt davomida biz Samarqand viloyati Urgut shahridagi eng sifatli mebel salonimizda xizmat ko'rsatamiz. Sizning uyining go'zalligi — bizning vazifamiz.</p>
-            </div>
-            <div class="footer-column">
-                <h4>Tezkor havolalar</h4>
-                <ul>
-                    <li><a href="#home">Bosh sahifa</a></li>
-                    <li><a href="#about">Biz haqimizda</a></li>
-                    <li><a href="#categories">Kategoriyalar</a></li>
-                    <li><a href="#products">Mahsulotlar</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h4>Xizmatlar</h4>
-                <ul>
-                    <li><a href="#">Individual buyurtma</a></li>
-                    <li><a href="#">Bepul yetkazib berish</a></li>
-                    <li><a href="#">O'rnatish xizmati</a></li>
-                    <li><a href="#">Kafolat xizmati</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h4>Yordam</h4>
-                <ul>
-                    <li><a href="#contact">Bog'lanish</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Yetkazib berish shartlari</a></li>
-                    <li><a href="#">Maxfiylik siyosati</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>© 2026 Raxmon Mebel. Barcha huquqlar himoyalangan.</p>
-            <p>Dizayn: Raxmon Mebel Team</p>
-        </div>
-    </footer>
-    <script>
-        window.addEventListener('scroll',function(){const navbar=document.getElementById('navbar');if(window.scrollY>50){navbar.classList.add('scrolled')}else{navbar.classList.remove('scrolled')}});document.querySelectorAll('a[href^="#"]').forEach(anchor=>{anchor.addEventListener('click',function(e){e.preventDefault();const target=document.querySelector(this.getAttribute('href'));if(target){target.scrollIntoView({behavior:'smooth',block:'start'})}})});const revealElements=document.querySelectorAll('.reveal');const revealOnScroll=()=>{revealElements.forEach(element=>{const elementTop=element.getBoundingClientRect().top;const windowHeight=window.innerHeight;if(elementTop<windowHeight-100){element.classList.add('active')}})};window.addEventListener('scroll',revealOnScroll);window.addEventListener('load',revealOnScroll);function toggleMenu(){const navLinks=document.querySelector('.nav-links');navLinks.style.display=navLinks.style.display==='flex'?'none':'flex'}document.querySelectorAll('.product-btn').forEach(btn=>{btn.addEventListener('click',function(){alert('Buyurtma uchun telefon: +998 99 773 21 11')})});
-        <script>
+
+<nav class="navbar" id="navbar">
+<div class="nav-container">
+<a href="#" class="logo"><i class="fas fa-couch"></i> Raxmon Mebel</a>
+<ul class="nav-links" id="navLinks">
+<li><a href="#home">Bosh sahifa</a></li>
+<li><a href="#about">Biz haqimizda</a></li>
+<li><a href="#categories">Kategoriyalar</a></li>
+<li><a href="#products">Mahsulotlar</a></li>
+<li><a href="#gallery">Galereya</a></li>
+<li><a href="#contact">Bog'lanish</a></li>
+<li><div class="search-bar"><input type="text" id="searchInput" placeholder="Mebel qidirish..."><button onclick="searchProducts()"><i class="fas fa-search"></i></button></div></li>
+<li><div class="cart-icon" onclick="openCart()"><i class="fas fa-shopping-cart"></i><span class="cart-count" id="cartCount">0</span></div></li>
+<li><a href="#contact" class="nav-cta">Buyurtma berish</a></li>
+</ul>
+<button class="mobile-menu-btn" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+</div>
+</nav>
+
+<section class="hero" id="home">
+<div class="hero-bg"></div>
+<div class="hero-container">
+<div class="hero-content">
+<div class="hero-badge"><i class="fas fa-star"></i> 26+ yillik tajriba</div>
+<h1 class="hero-title">Sifatli mebel — <span>uyning go'zalligi</span></h1>
+<p class="hero-subtitle">Raxmon Mebel — bu nafaqat mebel, balki uyingiz uchun qulaylik va go'zallik. Biz sizga eng yaxshi sifat va dizaynni taklif qilamiz.</p>
+<div class="hero-buttons">
+<a href="#categories" class="btn btn-primary"><i class="fas fa-th-large"></i> Katalog</a>
+<a href="#contact" class="btn btn-outline"><i class="fas fa-phone"></i> Bog'lanish</a>
+</div>
+</div>
+<div class="hero-image">
+<div class="hero-slider" id="heroSlider">
+<div class="slide active" style="background-image:url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&h=600&fit=crop')"><div class="slide-content"><h3>Yotoqxona mebeli</h3><p>Orzudagi uxlaydigan xonangiz</p></div></div>
+<div class="slide" style="background-image:url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=600&fit=crop')"><div class="slide-content"><h3>Oshxona mebeli</h3><p>Zamonaviy oshxona to'plamlari</p></div></div>
+<div class="slide" style="background-image:url('https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&h=600&fit=crop')"><div class="slide-content"><h3>Mehmonxona mebeli</h3><p>Qulay va nafis mehmonxona</p></div></div>
+<div class="slide" style="background-image:url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=600&fit=crop')"><div class="slide-content"><h3>Shkaf va garderob</h3><p>Tartibli va zamonaviy saqlash</p></div></div>
+<div class="slide" style="background-image:url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop')"><div class="slide-content"><h3>Ofis mebeli</h3><p>Professional ish muhiti</p></div></div>
+<button class="slider-nav prev" onclick="changeSlide(-1)"><i class="fas fa-chevron-left"></i></button>
+<button class="slider-nav next" onclick="changeSlide(1)"><i class="fas fa-chevron-right"></i></button>
+<div class="slider-dots">
+<div class="slider-dot active" onclick="goToSlide(0)"></div>
+<div class="slider-dot" onclick="goToSlide(1)"></div>
+<div class="slider-dot" onclick="goToSlide(2)"></div>
+<div class="slider-dot" onclick="goToSlide(3)"></div>
+<div class="slider-dot" onclick="goToSlide(4)"></div>
+</div>
+</div>
+<div class="hero-float-card">
+<div class="float-icon"><i class="fas fa-check-circle"></i></div>
+<div class="float-text"><h4>5000+</h4><p>Mamnun mijozlar</p></div>
+</div>
+</div>
+</div>
+</section>
+
+<div class="stats-bar">
+<div class="stats-container">
+<div class="stat-item"><h3>26+</h3><p>Yillik tajriba</p></div>
+<div class="stat-item"><h3>5000+</h3><p>Mamnun mijozlar</p></div>
+<div class="stat-item"><h3>200+</h3><p>Mahsulot turlari</p></div>
+<div class="stat-item"><h3>50+</h3><p>Usta xodimlar</p></div>
+</div>
+</div>
+
+<section class="section" id="about">
+<div class="section-header reveal">
+<span class="section-label">Biz haqimizda</span>
+<h2 class="section-title">Nima uchun bizni tanlashadi?</h2>
+<p class="section-desc">Raxmon Mebel — bu sifat, ishonch va zamonaviy dizayn uyg'unligi.</p>
+</div>
+<div class="about-grid">
+<div class="about-image reveal">
+<img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=500&h=400&fit=crop" alt="Showroom">
+</div>
+<div class="about-content reveal">
+<h3>Sifat va dizayn bir joyda</h3>
+<p>2000-yildan beri biz O'zbekiston bo'ylab minglab oilalarga sifatli va zamonaviy mebel yetkazib bermoqdamiz. Har bir mahsulotimizda sizning qulayligingiz va uyingiz go'zalligi uchun qayg'uramiz.</p>
+<p>Faqatgina natural yog'och, ekologik toza materiallar va zamonaviy texnologiyalar — bizning ishlab chiqarishimizning asosiy tamoyillaridir.</p>
+<div class="about-features">
+<div class="about-feature"><i class="fas fa-medal"></i><div><h4>Yuqori sifat</h4><p>Eng yaxshi materiallar</p></div></div>
+<div class="about-feature"><i class="fas fa-palette"></i><div><h4>Zamonaviy dizayn</h4><p>Eng so'nggi trendlar</p></div></div>
+<div class="about-feature"><i class="fas fa-hand-holding-heart"></i><div><h4>Individual yondashuv</h4><p>Har bir mijoz uchun maxsus</p></div></div>
+<div class="about-feature"><i class="fas fa-truck"></i><div><h4>Bepul yetkazib berish</h4><p>Toshkent bo'ylab</p></div></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section" id="categories">
+<div class="section-header reveal">
+<span class="section-label">Kategoriyalar</span>
+<h2 class="section-title">Mebel kategoriyalari</h2>
+<p class="section-desc">Har xil xonalar va uslublar uchun maxsus tanlangan mebel to'plamlari.</p>
+</div>
+<div class="categories-grid">
+<div class="category-card reveal" onclick="filterByCategory('mehmonxona')">
+<img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400&h=320&fit=crop" alt="Mehmonxona">
+<div class="category-overlay"><h3>Mehmonxona</h3><a href="#products" onclick="event.preventDefault();filterByCategory('mehmonxona')">Ko'rish <i class="fas fa-arrow-right"></i></a></div>
+</div>
+<div class="category-card reveal" onclick="filterByCategory('yotoqxona')">
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400&h=320&fit=crop" alt="Yotoqxona">
+<div class="category-overlay"><h3>Yotoqxona</h3><a href="#products" onclick="event.preventDefault();filterByCategory('yotoqxona')">Ko'rish <i class="fas fa-arrow-right"></i></a></div>
+</div>
+<div class="category-card reveal" onclick="filterByCategory('oshxona')">
+<img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=320&fit=crop" alt="Oshxona">
+<div class="category-overlay"><h3>Oshxona</h3><a href="#products" onclick="event.preventDefault();filterByCategory('oshxona')">Ko'rish <i class="fas fa-arrow-right"></i></a></div>
+</div>
+<div class="category-card reveal" onclick="filterByCategory('shkaf')">
+<img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=400&h=320&fit=crop" alt="Shkaf">
+<div class="category-overlay"><h3>Shkaf va garderob</h3><a href="#products" onclick="event.preventDefault();filterByCategory('shkaf')">Ko'rish <i class="fas fa-arrow-right"></i></a></div>
+</div>
+</div>
+</section>
+
+<section class="section" id="products">
+<div class="section-header reveal">
+<span class="section-label">Mahsulotlar</span>
+<h2 class="section-title">Mashhur mahsulotlar</h2>
+<p class="section-desc">Eng ko'p buyurtma qilinadigan va mijozlar sevib tanlaydigan mebellar.</p>
+</div>
+<div class="filter-tabs reveal">
+<button class="filter-tab active" onclick="filterProducts('all', this)">Hammasi</button>
+<button class="filter-tab" onclick="filterProducts('mehmonxona', this)">Mehmonxona</button>
+<button class="filter-tab" onclick="filterProducts('yotoqxona', this)">Yotoqxona</button>
+<button class="filter-tab" onclick="filterProducts('oshxona', this)">Oshxona</button>
+<button class="filter-tab" onclick="filterProducts('shkaf', this)">Shkaf</button>
+<button class="filter-tab" onclick="filterProducts('ofis', this)">Ofis</button>
+</div>
+<div class="products-grid" id="productsGrid">
+<div class="product-card reveal" data-category="mehmonxona" data-name="prestij divan">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=300&h=220&fit=crop" alt="Sofa"><span class="product-badge">Yangi</span></div>
+<div class="product-info"><h3>"Prestij" divan</h3><p>Zamonaviy uslubdagi yumshoq divan</p><div class="product-footer"><span class="product-price">4 500 000 so'm</span><button class="product-btn" onclick="addToCart('prestij','Prestij divan',4500000,'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=300&h=220&fit=crop')"><i class="fas fa-shopping-cart"></i></button></div></div>
+<button class="order-btn" onclick="openOrderModal('prestij','Prestij divan',4500000,'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=300&h=220&fit=crop','mehmonxona')"><i class="fas fa-shopping-bag"></i> Buyurtma berish</button>
+</div>
+<div class="product-card reveal" data-category="mehmonxona" data-name="klassik stol">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?w=300&h=220&fit=crop" alt="Dining Table"></div>
+<div class="product-info"><h3>"Klassik" stol</h3><p>6 kishilik ovqatlanish stoli</p><div class="product-footer"><span class="product-price">2 800 000 so'm</span><button class="product-btn" onclick="addToCart('klassik','Klassik stol',2800000,'https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?w=300&h=220&fit=crop')"><i class="fas fa-shopping-cart"></i></button></div></div>
+<button class="order-btn" onclick="openOrderModal('klassik','Klassik stol',2800000,'https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?w=300&h=220&fit=crop','mehmonxona')"><i class="fas fa-shopping-bag"></i> Buyurtma berish</button>
+</div>
+<div class="product-card reveal" data-category="mehmonxona" data-name="minimal jurnal stoli">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=300&h=220&fit=crop" alt="Coffee Table"></div>
+<div class="product-info"><h3>"Minimal" jurnal stoli</h3><p>Yog'och + shisha</p><div class="product-footer"><span class="product-price">950 000 so'm</span><button class="product-btn" onclick="addToCart('minimal','Minimal jurnal stoli',950000,'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=300&h=220&fit=crop')"><i class="fas fa-shopping-cart"></i></button></div></div>
+<button class="order-btn" onclick="openOrderModal('minimal','Minimal jurnal stoli',950000,'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=300&h=220&fit=crop','mehmonxona')"><i class="fas fa-shopping-bag"></i> Buyurtma berish</button>
+</div>
+<div class="product-card reveal" data-category="mehmonxona" data-name="smart tv tumbasi">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=300&h=220&fit=crop" alt="TV Stand"></div>
+<div class="product-info"><h3>"Smart" TV tumbasi</h3><p>Zamonaviy dizaynda</p><div class="product-footer"><span class="product-price">1 800 000 so'm</span><button class="product-btn" onclick="addToCart('smart','Smart TV tumbasi',1800000,'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=300&h=220&fit=crop')"><i class="fas fa-shopping-cart"></i></button></div></div>
+<button class="order-btn" onclick="openOrderModal('smart','Smart TV tumbasi',1800000,'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=300&h=220&fit=crop','mehmonxona')"><i class="fas fa-shopping-bag"></i> Buyurtma berish</button>
+</div>
+<div class="product-card reveal" data-category="yotoqxona" data-name="royal yotoq">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=300&h=220&fit=crop" alt="Bed"></div>
+<div class="product-info"><h3>"Royal" yotoq</h3><p>2x1.8m, yog'och karkas</p><div class="product-footer"><span class="product-price">3 200 000 so'm</span><button class="product-btn" onclick="addToCart('royal','Royal yotoq',3200000,'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=300&h=220&fit=crop')"><i class="fas fa-shopping-cart"></i></button></div></div>
+<button class="order-btn" onclick="openOrderModal('royal','Royal yotoq',3200000,'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=300&h=220&fit=crop','yotoqxona')"><i class="fas fa-shopping-bag"></i> Buyurtma berish</button>
+</div>
+<div class="product-card reveal" data-category="yotoqxona" data-name="lyuks yotoqxona">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1617325247661-675ab4b64ae2?w=300&h=220&fit=crop" alt="Bedroom Set"><span class="product-badge">Top</span></div>
+<div class="product-info"><h3>"Lyuks" yotoqxona to'plami</h3><p>To'liq yotoqxona komplekti</p><div class="product-footer"><span class="product-price">12 500 000 so'm</span><button class="product-btn" onclick="addToCart('lyuks_yotoq','Lyuks yotoqxona toplami',12500000,'https://images.unsplash.com/photo-1617325247661-675ab4b64ae2?w=300&h=220&fit=crop')"><i class="fas fa-shopping-cart"></i></button></div></div>
+<button class="order-btn" onclick="openOrderModal('lyuks_yotoq','Lyuks yotoqxona toplami',12500000,'https://images.unsplash.com/photo-1617325247661-675ab4b64ae2?w=300&h=220&fit=crop','yotoqxona')"><i class="fas fa-shopping-bag"></i> Buyurtma berish</button>
+</div>
+<div class="product-card reveal" data-category="yotoqxona" data-name="tumba">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1532372320572-cda25653a26d?w=300&h=220&fit=crop" alt="Nightstand"></div>
+<div class="product-info"><h3>"Nafis" tumbochka</h3><p>Yotoq yonidagi tumbochka</p><div class="product-footer"><span class="product-price">650 000 so'm</span><button class="product-btn" onclick="addToCart('tumbochka','Nafis tumbochka',650000,'https://images.unsplash.com/photo-1532372320572-cda25653a26d?w=300&h=220&fit=crop')"><i class="fas fa-shopping-cart"></i></button></div></div>
+<button class="order-btn" onclick="openOrderModal('tumbochka','Nafis tumbochka',650000,'https://images.unsplash.com/photo-1532372320572-cda25653a26d?w=300&h=220&fit=crop','yotoqxona')"><i class="fas fa-shopping-bag"></i> Buyurtma berish</button>
+</div>
+<div class="product-card reveal" data-category="yotoqxona" data-name="komod">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=300&h=220&fit=crop" alt="Dresser"></div>
+<div class="product-info"><h3>"Zamonaviy" komod</h3><p>6 tortmali katta komod</p><div class="product-footer"><span class="product-price">1 900 000 so'm</span><button class="product-btn" onclick="addToCart('komod','Zamonaviy komod',1900000,'https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=300&h=220&fit=crop')"><i class="fas fa-shopping-cart"></i></button></div></div>
+<button class="order-btn" onclick="openOrderModal('komod','Zamonaviy komod',1900000,'https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=300&h=220&fit=crop','yotoqxona')"><i class="fas fa-shopping-bag"></i> Buyurtma berish</button>
+</div>
+<div class="product-card reveal" data-category="oshxona" data-name="modern oshxona">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=300&h=220&fit=crop" alt="Kitchen Set"><span class="product-badge">Chegirma</span></div>
+<div class="product-info"><h3>"Modern" oshxona</h3><p>3 metrli oshxona to'plami</p><div class="product-footer"><span class="product-price">8 500 000 so'm</span><button class="product-btn" onclick="addToCart('modern','Modern oshxona',8500000,'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=300&h=220&fit=crop')"><i class="fas fa-shopping-cart"></i></button></div></div>
+<button class="order-btn" onclick="openOrderModal('modern','Modern oshxona',8500000,'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=300&h=220&fit=crop','oshxona')"><i class="fas fa-shopping-bag"></i> Buyurtma berish</button>
+</div>
+<div class="product-card reveal" data-category="oshxona" data-name="stul">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1503602642458-232111445657?w=300&h=220&fit=crop" alt="Chair"></div>
+<div class="product-info"><h3>"Oshxona" stuli</h3><p>Yumshoq o'tinishli stul</p><div class="product-footer"><span class="product-price">350 000 so'm</span><button class="product-btn" onclick="addToCart('stul','Oshxona stuli',350000,'https://images.unsplash.com/photo-1503602642458-232111445657?w=300&h=220&fit=crop')"><i class="fas fa-shopping-cart"></i></button></div></div>
+<button class="order-btn" onclick="openOrderModal('stul','Oshxona stuli',350000,'https://images.unsplash.com/photo-1503602642458-232111445657?w=300&h=220&fit=crop','oshxona')"><i class="fas fa-shopping-bag"></i> Buyurtma berish</button>
+</div>
+<div class="product-card reveal" data-category="oshxona" data-name="bar stul">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=300&h=220&fit=crop" alt="Bar Stool"></div>
+<div class="product-info"><h3>"Bar" stuli</h3><p>Zamonaviy bar stuli</p><div class="product-footer"><span class="product-price">480 000 so'm</span><button class="product-btn" onclick="addToCart('bar','Bar stuli',480000,'https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=300&h=220&fit=crop')"><i class="fas fa-shopping-cart"></i></button></div></div>
+<button class="order-btn" onclick="openOrderModal('bar','Bar stuli',480000,'https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=300&h=220&fit=crop','oshxona')"><i class="fas fa-shopping-bag"></i> Buyurtma berish</button>
+</div>
+<div class="product-card reveal" data-category="oshxona" data-name="oshxona stoli">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=300&h=220&fit=crop" alt="Kitchen Table"></div>
+<div class="product-info"><h3>"Oshxona" stoli</h3><p>4 kishilik oshxona stoli</p><div class="product-footer"><span class="product-price">1 600 000 so'm</span><button class="product-btn" onclick="addToCart('oshxona_stol','Oshxona stoli',1600000,'https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=300&h=220&fit=crop')"><i class="fas fa-shopping-cart"></i></button></div></div>
+<button class="order-btn" onclick="openOrderModal('oshxona_stol','Oshxona stoli',1600000,'https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=300&h=220&fit=crop','oshxona')"><i class="fas fa-shopping-bag"></i> Buyurtma berish</button>
+</div>
+<div class="product-card reveal" data-category="shkaf" data-name="lyuks shkaf">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=300&h=220&fit=crop" alt="Wardrobe"><span class="product-badge">Top</span></div>
+<div class="product-info"><h3>"Lyuks" shkaf</h3><p>4 eshikli kiyim shkafi</p><div class="product-footer"><span class="product-price">5 200 000 so'm</span><button class="product-btn" onclick="addToCart('lyuks_shkaf','Lyuks shkaf',5200000,'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=300&h=220&fit=crop')"><i class="fas fa-shopping-cart"></i></button></div></div>
+<button class="order-btn" onclick="openOrderModal('lyuks_shkaf','Lyuks shkaf',5200000,'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=300&h=220&fit=crop','shkaf')"><i class="fas fa-shopping-bag"></i> Buyurtma berish</button>
+</div>
+<div class="product-card reveal" data-category="shkaf" data-name="shkaf kupe">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=300&h=220&fit=crop" alt="Sliding Wardrobe"></div>
+<div class="product-info"><h3>"Kupe" shkaf</h3><p>3 eshikli ko'chma shkaf</p><div class="product-footer"><span class="product-price">6 800 000 so'm</span><button class="product-btn" onclick="addToCart('kupe','Kupe shkaf',6800000,'https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=300&h=220&fit=crop')"><i class="fas fa-shopping-cart"></i></button></div></div>
+<button class="order-btn" onclick="openOrderModal('kupe','Kupe shkaf',6800000,'https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=300&h=220&fit=crop','shkaf')"><i class="fas fa-shopping-bag"></i> Buyurtma berish</button>
+</div>
+<div class="product-card reveal" data-category="shkaf" data-name="kitob javoni">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1594620302200-9a762244a156?w=300&h=220&fit=crop" alt="Bookshelf"></div>
+<div class="product-info"><h3>"Kitobxon" javon</h3><p>5 qavatli kitob javoni</p><div class="product-footer"><span class="product-price">1 200 000 so'm</span><button class="product-btn" onclick="addToCart('javon','Kitobxon javon',1200000,'https://images.unsplash.com/photo-1594620302200-9a762244a156?w=300&h=220&fit=crop')"><i class="fas fa-shopping-cart"></i></button></div></div>
+<button class="order-btn" onclick="openOrderModal('javon','Kitobxon javon',1200000,'https://images.unsplash.com/photo-1594620302200-9a762244a156?w=300&h=220&fit=crop','shkaf')"><i class="fas fa-shopping-bag"></i> Buyurtma berish</button>
+</div>
+<div class="product-card reveal" data-category="shkaf" data-name="trikotaj shkaf">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1558997519-83ea9252edf8?w=300&h=220&fit=crop" alt="Closet"></div>
+<div class="product-info"><h3>"Trikotaj" shkaf</h3><p>2 eshikli kiyim shkafi</p><div class="product-footer"><span class="product-price">3 400 000 so'm</span><button class="product-btn" onclick="addToCart('trikotaj','Trikotaj shkaf',3400000,'https://images.unsplash.com/photo-1558997519-83ea9252edf8?w=300&h=220&fit=crop')"><i class="fas fa-shopping-cart"></i></button></div></div>
+<button class="order-btn" onclick="openOrderModal('trikotaj','Trikotaj shkaf',3400000,'https://images.unsplash.com/photo-1558997519-83ea9252edf8?w=300&h=220&fit=crop','shkaf')"><i class="fas fa-shopping-bag"></i> Buyurtma berish</button>
+</div>
+<div class="product-card reveal" data-category="ofis" data-name="ergo kreslo">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=300&h=220&fit=crop" alt="Office Chair"></div>
+<div class="product-info"><h3>"Ergo" ofis kreslosi</h3><p>Orqa muhofaza bilan</p><div class="product-footer"><span class="product-price">1 500 000 so'm</span><button class="product-btn" onclick="addToCart('ergo','Ergo ofis kreslosi',1500000,'https://images.unsplash.com/photo-1497366216548-37526070297c?w=300&h=220&fit=crop')"><i class="fas fa-shopping-cart"></i></button></div></div>
+<button class="order-btn" onclick="openOrderModal('ergo','Ergo ofis kreslosi',1500000,'https://images.unsplash.com/photo-1497366216548-37526070297c?w=300&h=220&fit=crop','ofis')"><i class="fas fa-shopping-bag"></i> Buyurtma berish</button>
+</div>
+<div class="product-card reveal" data-category="ofis" data-name="ofis stoli">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?w=300&h=220&fit=crop" alt="Office Desk"></div>
+<div class="product-info"><h3>"Direktor" stoli</h3><p>Katta ofis stoli</p><div class="product-footer"><span class="product-price">2 200 000 so'm</span><button class="product-btn" onclick="addToCart('direktor','Direktor stoli',2200000,'https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?w=300&h=220&fit=crop')"><i class="fas fa-shopping-cart"></i></button></div></div>
+<button class="order-btn" onclick="openOrderModal('direktor','Direktor stoli',2200000,'https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?w=300&h=220&fit=crop','ofis')"><i class="fas fa-shopping-bag"></i> Buyurtma berish</button>
+</div>
+<div class="product-card reveal" data-category="ofis" data-name="ofis javoni">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=300&h=220&fit=crop" alt="Office Cabinet"></div>
+<div class="product-info"><h3>"Arxiv" javoni</h3><p>Hujjatlar uchun javon</p><div class="product-footer"><span class="product-price">1 800 000 so'm</span><button class="product-btn" onclick="addToCart('arxiv','Arxiv javoni',1800000,'https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=300&h=220&fit=crop')"><i class="fas fa-shopping-cart"></i></button></div></div>
+<button class="order-btn" onclick="openOrderModal('arxiv','Arxiv javoni',1800000,'https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=300&h=220&fit=crop','ofis')"><i class="fas fa-shopping-bag"></i> Buyurtma berish</button>
+</div>
+<div class="product-card reveal" data-category="ofis" data-name="mehmon kreslosi">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=300&h=220&fit=crop" alt="Guest Chair"></div>
+<div class="product-info"><h3>"Mehmon" kreslosi</h3><p>Mehmonlar uchun kreslo</p><div class="product-footer"><span class="product-price">900 000 so'm</span><button class="product-btn" onclick="addToCart('mehmon','Mehmon kreslosi',900000,'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=300&h=220&fit=crop')"><i class="fas fa-shopping-cart"></i></button></div></div>
+<button class="order-btn" onclick="openOrderModal('mehmon','Mehmon kreslosi',900000,'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=300&h=220&fit=crop','ofis')"><i class="fas fa-shopping-bag"></i> Buyurtma berish</button>
+</div>
+</div>
+</section>
+
+<section class="section" id="gallery">
+<div class="section-header reveal">
+<span class="section-label">Galereya</span>
+<h2 class="section-title">Ishlarimizdan namunalar</h2>
+<p class="section-desc">Bizning eng yaxshi loyihalarimiz va buyurtmalarimiz.</p>
+</div>
+<div class="gallery-grid">
+<div class="gallery-item large reveal"><img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=600&h=500&fit=crop" alt="Interior 1"></div>
+<div class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=300&h=250&fit=crop" alt="Interior 2"></div>
+<div class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=300&h=250&fit=crop" alt="Interior 3"></div>
+<div class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=300&h=250&fit=crop" alt="Interior 4"></div>
+<div class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=300&h=250&fit=crop" alt="Interior 5"></div>
+</div>
+</section>
+
+<section class="section" style="background:var(--white)">
+<div class="section-header reveal">
+<span class="section-label">Xizmatlar</span>
+<h2 class="section-title">Nima uchun bizni tanlashadi?</h2>
+</div>
+<div class="features-grid">
+<div class="feature-card reveal">
+<div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+<h3>Sifat kafolati</h3>
+<p>Har bir mahsulotimiz 5 yil kafolat bilan ta'minlanadi.</p>
+</div>
+<div class="feature-card reveal">
+<div class="feature-icon"><i class="fas fa-truck"></i></div>
+<h3>Bepul yetkazib berish</h3>
+<p>Toshkent shahri bo'ylab bepul yetkazib berish va o'rnatish.</p>
+</div>
+<div class="feature-card reveal">
+<div class="feature-icon"><i class="fas fa-pencil-ruler"></i></div>
+<h3>Individual buyurtma</h3>
+<p>O'zingizning xohishingiz va o'lchamlaringiz bo'yicha.</p>
+</div>
+<div class="feature-card reveal">
+<div class="feature-icon"><i class="fas fa-headset"></i></div>
+<h3>24/7 qo'llab-quvvatlash</h3>
+<p>Mijozlarimizga har vaqtda yordam berishga tayyormiz.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header reveal">
+<span class="section-label">Mijozlar fikri</span>
+<h2 class="section-title">Biz haqimizda nima deyishadi</h2>
+</div>
+<div class="testimonials-grid">
+<div class="testimonial-card reveal">
+<div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+<p class="testimonial-text">"Raxmon Mebeldan oshxona to'plami buyurtma qildim. Sifatidan juda mamnunman! Bepul yetkazib berish va o'rnatish xizmati ham ajoyib."</p>
+<div class="testimonial-author"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop" alt="Mijoz"><div class="author-info"><h4>Dilnoza Rahimova</h4><p>Samarqand</p></div></div>
+</div>
+<div class="testimonial-card reveal">
+<div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+<p class="testimonial-text">"Uyim uchun to'liq mebel to'plami buyurtma qildim. Dizaynerlarimiz bilan birga loyihalashdi. Natijadan juda xursandman!"</p>
+<div class="testimonial-author"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" alt="Mijoz"><div class="author-info"><h4>Bekzod Tursunov</h4><p>Toshkent</p></div></div>
+</div>
+<div class="testimonial-card reveal">
+<div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+<p class="testimonial-text">"Ofisimiz uchun 15 ta ish stoli va kreslolar buyurtma qildik. Sifat va narx nisbati juda yaxshi. Hamkorlikdan mamnunman."</p>
+<div class="testimonial-author"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop" alt="Mijoz"><div class="author-info"><h4>Nodira Karimova</h4><p>Toshkent</p></div></div>
+</div>
+</div>
+</section>
+
+<section class="section" id="contact">
+<div class="section-header reveal">
+<span class="section-label">Bog'lanish</span>
+<h2 class="section-title">Biz bilan bog'laning</h2>
+<p class="section-desc">Savollaringiz bormi? Bizga murojaat qiling, tez orada javob beramiz.</p>
+</div>
+<div class="contact-grid">
+<div class="contact-info reveal">
+<h3>Aloqa ma'lumotlari</h3>
+<p>Biz bilan quyidagi manzillar orqali bog'lanishingiz mumkin.</p>
+<div class="contact-details">
+<div class="contact-item"><i class="fas fa-map-marker-alt"></i><div><h4>Manzil</h4><p>Urgut, Mergancha MFY,<br>Mo'ljal: Katta masjid yonida</p></div></div>
+<div class="contact-item"><i class="fas fa-phone"></i><div><h4>Telefon</h4><p>+99899 773 21 11</p></div></div>
+<div class="contact-item"><i class="fas fa-envelope"></i><div><h4>Email</h4><p>info@raxmonmebel.uz</p></div></div>
+<div class="contact-item"><i class="fas fa-clock"></i><div><h4>Ish vaqti</h4><p>Har kuni: 8:00 - 19:00</p><div style="margin-top:15px;display:flex;gap:12px;flex-wrap:wrap">
+<a href="https://t.me/Mebel_Saroyi" target="_blank" class="social-icon-btn" style="width:45px;height:45px;border-radius:50%;background:#0088cc;color:white;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:1.2rem;transition:all 0.3s ease;box-shadow:0 4px 10px rgba(0,136,204,0.3)"><i class="fab fa-telegram"></i></a>
+<a href="https://instagram.com/raxmon_ota_mebel_saloni" target="_blank" class="social-icon-btn" style="width:45px;height:45px;border-radius:50%;background:#e4405f;color:white;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:1.2rem;transition:all 0.3s ease;box-shadow:0 4px 10px rgba(228,64,95,0.3)"><i class="fab fa-instagram"></i></a>
+<a href="https://facebook.com/raxmonmebel" target="_blank" class="social-icon-btn" style="width:45px;height:45px;border-radius:50%;background:#1877f2;color:white;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:1.2rem;transition:all 0.3s ease;box-shadow:0 4px 10px rgba(24,119,242,0.3)"><i class="fab fa-facebook-f"></i></a>
+<a href="https://wa.me/998997732111" target="_blank" class="social-icon-btn" style="width:45px;height:45px;border-radius:50%;background:#25d366;color:white;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:1.2rem;transition:all 0.3s ease;box-shadow:0 4px 10px rgba(37,211,102,0.3)"><i class="fab fa-whatsapp"></i></a>
+</div></div></div>
+</div>
+</div>
+<div class="contact-form reveal">
+<form onsubmit="event.preventDefault(); alert('Xabaringiz yuborildi! Tez orada siz bilan bog'lanamiz.');">
+<div class="form-group"><label>Ismingiz</label><input type="text" placeholder="Ismingizni kiriting" required></div>
+<div class="form-group"><label>Telefon raqamingiz</label><input type="tel" placeholder="+998 __ ___ __ __" required></div>
+<div class="form-group"><label>Xabaringiz</label><textarea placeholder="Xabaringizni yozing..." required></textarea></div>
+<button type="submit" class="submit-btn"><i class="fas fa-paper-plane"></i> Yuborish</button>
+</form>
+</div>
+</div>
+</section>
+
+<footer class="footer">
+<div class="footer-grid">
+<div class="footer-brand">
+<h3><i class="fas fa-couch"></i> Raxmon Mebel</h3>
+<p>26 yildan ortiq vaqt davomida biz Samarqand viloyati Urgut shahridagi eng sifatli mebel salonimizda xizmat ko'rsatamiz. Sizning uyingiz go'zalligi — bizning vazifamiz.</p>
+</div>
+<div class="footer-column">
+<h4>Tezkor havolalar</h4>
+<ul>
+<li><a href="#home">Bosh sahifa</a></li>
+<li><a href="#about">Biz haqimizda</a></li>
+<li><a href="#categories">Kategoriyalar</a></li>
+<li><a href="#products">Mahsulotlar</a></li>
+</ul>
+</div>
+<div class="footer-column">
+<h4>Xizmatlar</h4>
+<ul>
+<li><a href="#" onclick="event.preventDefault();filterProducts('all', document.querySelectorAll('.filter-tab')[0]);document.getElementById('products').scrollIntoView({behavior:'smooth'})">Individual buyurtma</a></li>
+<li><a href="#">Bepul yetkazib berish</a></li>
+<li><a href="#">O'rnatish xizmati</a></li>
+<li><a href="#">Kafolat xizmati</a></li>
+</ul>
+</div>
+<div class="footer-column">
+<h4>Yordam</h4>
+<ul>
+<li><a href="#contact">Bog'lanish</a></li>
+<li><a href="#">FAQ</a></li>
+<li><a href="#">Yetkazib berish shartlari</a></li>
+<li><a href="#">Maxfiylik siyosati</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-social" style="gap:15px">
+<a href="https://t.me/Mebel_Saroyi" target="_blank" class="social-icon-btn" style="width:50px;height:50px;border-radius:50%;background:#0088cc;color:white;display:inline-flex;align-items:center;justify-content:center;text-decoration:none;font-size:1.3rem;transition:all 0.3s ease;box-shadow:0 4px 15px rgba(0,136,204,0.4);margin:0 8px"><i class="fab fa-telegram"></i></a>
+<a href="https://instagram.com/raxmon_ota_mebel_saloni" target="_blank" class="social-icon-btn" style="width:50px;height:50px;border-radius:50%;background:#e4405f;color:white;display:inline-flex;align-items:center;justify-content:center;text-decoration:none;font-size:1.3rem;transition:all 0.3s ease;box-shadow:0 4px 15px rgba(228,64,95,0.4);margin:0 8px"><i class="fab fa-instagram"></i></a>
+<a href="https://facebook.com/raxmonmebel" target="_blank" class="social-icon-btn" style="width:50px;height:50px;border-radius:50%;background:#1877f2;color:white;display:inline-flex;align-items:center;justify-content:center;text-decoration:none;font-size:1.3rem;transition:all 0.3s ease;box-shadow:0 4px 15px rgba(24,119,242,0.4);margin:0 8px"><i class="fab fa-facebook-f"></i></a>
+<a href="https://wa.me/998997732111" target="_blank" class="social-icon-btn" style="width:50px;height:50px;border-radius:50%;background:#25d366;color:white;display:inline-flex;align-items:center;justify-content:center;text-decoration:none;font-size:1.3rem;transition:all 0.3s ease;box-shadow:0 4px 15px rgba(37,211,102,0.4);margin:0 8px"><i class="fab fa-whatsapp"></i></a>
+</div>
+<div class="footer-bottom">
+<p>© 2026 Raxmon Mebel. Barcha huquqlar himoyalangan.</p>
+<p>Ishlab chiqilgan: Raxmon Mebel Team</p>
+</div>
+</footer>
+
+<!-- CART MODAL -->
+<div class="modal-overlay" id="cartModalOverlay" onclick="if(event.target===this)closeCart()">
+<div class="modal cart-modal">
+<div class="modal-header">
+<h3><i class="fas fa-shopping-cart"></i> Savatcha</h3>
+<button class="modal-close" onclick="closeCart()"><i class="fas fa-times"></i></button>
+</div>
+<div class="modal-body" id="cartBody">
+<div class="cart-empty">
+<i class="fas fa-shopping-basket"></i>
+<p>Savatcha bo'sh</p>
+<p style="font-size:0.85rem">Mahsulot qo'shish uchun "Buyurtma berish" tugmasini bosing</p>
+</div>
+</div>
+<div class="modal-footer" id="cartFooter" style="display:none">
+<div class="cart-total" style="width:100%"><span>Jami:</span><span id="cartTotal">0 so'm</span></div>
+<button class="btn-primary" style="width:100%;margin-top:1rem" onclick="openCartOrder()"><i class="fas fa-shopping-bag"></i> Buyurtma berish</button>
+</div>
+</div>
+</div>
+
+<!-- ORDER MODAL -->
+<div class="modal-overlay" id="orderModalOverlay" onclick="if(event.target===this)closeOrderModal()">
+<div class="modal">
+<div class="modal-header">
+<h3><i class="fas fa-shopping-bag"></i> Buyurtma berish</h3>
+<button class="modal-close" onclick="closeOrderModal()"><i class="fas fa-times"></i></button>
+</div>
+<div class="modal-body">
+<div class="order-product-preview" id="orderPreview">
+<img src="" alt="" id="orderImg">
+<div>
+<h4 id="orderName">Mahsulot nomi</h4>
+<p class="price" id="orderPrice">0 so'm</p>
+</div>
+</div>
+<div class="option-group">
+<label>Rangni tanlang:</label>
+<div class="option-buttons" id="colorOptions">
+<button class="option-btn selected" onclick="selectOption(this,'color')">Jigarrang</button>
+<button class="option-btn" onclick="selectOption(this,'color')">Oq</button>
+<button class="option-btn" onclick="selectOption(this,'color')">Kulrang</button>
+<button class="option-btn" onclick="selectOption(this,'color')">Qora</button>
+<button class="option-btn" onclick="selectOption(this,'color')">Yashil</button>
+<button class="option-btn" onclick="selectOption(this,'color')">Ko'k</button>
+</div>
+</div>
+<div class="option-group">
+<label>Materialni tanlang:</label>
+<div class="option-buttons" id="materialOptions">
+<button class="option-btn selected" onclick="selectOption(this,'material')">Yog'och</button>
+<button class="option-btn" onclick="selectOption(this,'material')">MDF</button>
+<button class="option-btn" onclick="selectOption(this,'material')">LDSP</button>
+<button class="option-btn" onclick="selectOption(this,'material')">Shpon</button>
+<button class="option-btn" onclick="selectOption(this,'material')">Massiv</button>
+</div>
+</div>
+<div class="option-group">
+<label>O'lchamlar (sm):</label>
+<div class="size-inputs">
+<div><label style="font-size:0.8rem;color:var(--text-light)">Uzunlik</label><input type="number" id="sizeL" placeholder="200" value="200"></div>
+<div><label style="font-size:0.8rem;color:var(--text-light)">Kenglik</label><input type="number" id="sizeW" placeholder="100" value="100"></div>
+<div><label style="font-size:0.8rem;color:var(--text-light)">Balandlik</label><input type="number" id="sizeH" placeholder="80" value="80"></div>
+</div>
+</div>
+<div class="option-group">
+<label>Miqdor:</label>
+<div style="display:flex;align-items:center;gap:1rem">
+<button class="product-btn" onclick="changeQty(-1)" style="width:36px;height:36px"><i class="fas fa-minus"></i></button>
+<span id="orderQty" style="font-size:1.2rem;font-weight:700">1</span>
+<button class="product-btn" onclick="changeQty(1)" style="width:36px;height:36px"><i class="fas fa-plus"></i></button>
+</div>
+</div>
+<div class="customer-form">
+<h4 style="margin-bottom:1rem">Mijoz ma'lumotlari</h4>
+<div class="form-group"><label>Ismingiz *</label><input type="text" id="custName" placeholder="Ismingizni kiriting" required></div>
+<div class="form-group"><label>Telefon raqamingiz *</label><input type="tel" id="custPhone" placeholder="+998 __ ___ __ __" required></div>
+<div class="form-group"><label>Manzil</label><input type="text" id="custAddress" placeholder="Yetkazib berish manzili"></div>
+<div class="form-group"><label>Qo'shimcha izoh</label><textarea id="custNote" placeholder="Maxsus talablar, rang, dizayn..." style="min-height:80px"></textarea></div>
+</div>
+</div>
+<div class="modal-footer">
+<button class="btn-outline" onclick="closeOrderModal()">Bekor qilish</button>
+<button class="btn-primary" onclick="submitOrder()"><i class="fas fa-paper-plane"></i> Buyurtma berish</button>
+</div>
+</div>
+</div>
+
+<script>
+// ===== HERO SLIDER =====
 let currentSlide = 0;
 const slides = document.querySelectorAll('.hero-slider .slide');
 const dots = document.querySelectorAll('.slider-dot');
@@ -367,35 +713,246 @@ const totalSlides = slides.length;
 let slideInterval;
 
 function showSlide(index) {
-    slides.forEach((slide, i) => {
-        slide.classList.toggle('active', i === index);
-    });
-    dots.forEach((dot, i) => {
-        dot.classList.toggle('active', i === index);
-    });
-    currentSlide = index;
+slides.forEach((slide, i) => { slide.classList.toggle('active', i === index); });
+dots.forEach((dot, i) => { dot.classList.toggle('active', i === index); });
+currentSlide = index;
 }
-
 function changeSlide(direction) {
-    let newIndex = currentSlide + direction;
-    if (newIndex >= totalSlides) newIndex = 0;
-    if (newIndex < 0) newIndex = totalSlides - 1;
-    showSlide(newIndex);
-    resetTimer();
+let newIndex = currentSlide + direction;
+if (newIndex >= totalSlides) newIndex = 0;
+if (newIndex < 0) newIndex = totalSlides - 1;
+showSlide(newIndex);
+resetTimer();
 }
-
 function goToSlide(index) {
-    showSlide(index);
-    resetTimer();
+showSlide(index);
+resetTimer();
 }
-
 function resetTimer() {
-    clearInterval(slideInterval);
-    slideInterval = setInterval(() => changeSlide(1), 5000);
+clearInterval(slideInterval);
+slideInterval = setInterval(() => changeSlide(1), 5000);
+}
+slideInterval = setInterval(() => changeSlide(1), 5000);
+
+// ===== CATEGORY FILTER =====
+function filterByCategory(category) {
+document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
+setTimeout(() => {
+const tabs = document.querySelectorAll('.filter-tab');
+tabs.forEach(t => t.classList.remove('active'));
+const targetTab = Array.from(tabs).find(t => t.textContent.toLowerCase().includes(category === 'shkaf' ? 'shkaf' : category));
+if (targetTab) targetTab.classList.add('active');
+filterProducts(category, targetTab || tabs[0]);
+}, 500);
 }
 
-slideInterval = setInterval(() => changeSlide(1), 5000);
+function filterProducts(category, btn) {
+document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
+if (btn) btn.classList.add('active');
+const cards = document.querySelectorAll('.product-card');
+cards.forEach(card => {
+if (category === 'all' || card.dataset.category === category) {
+card.classList.remove('hidden');
+} else {
+card.classList.add('hidden');
+}
+});
+}
+
+// ===== SEARCH =====
+function searchProducts() {
+const query = document.getElementById('searchInput').value.toLowerCase().trim();
+if (!query) {
+filterProducts('all', document.querySelectorAll('.filter-tab')[0]);
+return;
+}
+document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
+document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
+const cards = document.querySelectorAll('.product-card');
+let found = false;
+cards.forEach(card => {
+const name = card.dataset.name || '';
+const category = card.dataset.category || '';
+if (name.includes(query) || category.includes(query)) {
+card.classList.remove('hidden');
+found = true;
+} else {
+card.classList.add('hidden');
+}
+});
+if (!found) {
+alert('"' + query + '" bo'yicha hech narsa topilmadi. Boshqa so'z bilan qidirib ko'ring.');
+}
+}
+document.getElementById('searchInput').addEventListener('keypress', function(e) {
+if (e.key === 'Enter') searchProducts();
+});
+
+// ===== CART =====
+let cart = [];
+function addToCart(id, name, price, image) {
+const existing = cart.find(item => item.id === id);
+if (existing) {
+existing.qty++;
+} else {
+cart.push({ id, name, price, image, qty: 1 });
+}
+updateCartUI();
+showNotification('Savatchaga qo'shildi: ' + name);
+}
+function removeFromCart(id) {
+cart = cart.filter(item => item.id !== id);
+updateCartUI();
+}
+function updateCartUI() {
+const count = cart.reduce((sum, item) => sum + item.qty, 0);
+document.getElementById('cartCount').textContent = count;
+const body = document.getElementById('cartBody');
+const footer = document.getElementById('cartFooter');
+if (cart.length === 0) {
+body.innerHTML = '<div class="cart-empty"><i class="fas fa-shopping-basket"></i><p>Savatcha bo'sh</p><p style="font-size:0.85rem">Mahsulot qo'shish uchun "Buyurtma berish" tugmasini bosing</p></div>';
+footer.style.display = 'none';
+return;
+}
+let html = '';
+let total = 0;
+cart.forEach(item => {
+const itemTotal = item.price * item.qty;
+total += itemTotal;
+html += '<div class="cart-item"><img src="' + item.image + '" alt=""><div class="cart-item-info"><h4>' + item.name + '</h4><p>Miqdor: ' + item.qty + ' ta</p><span class="cart-item-price">' + itemTotal.toLocaleString() + ' so'm</span></div><button class="cart-item-remove" onclick="removeFromCart('' + item.id + '')"><i class="fas fa-trash"></i></button></div>';
+});
+body.innerHTML = html;
+document.getElementById('cartTotal').textContent = total.toLocaleString() + ' so'm';
+footer.style.display = 'block';
+}
+function openCart() {
+document.getElementById('cartModalOverlay').classList.add('active');
+document.body.style.overflow = 'hidden';
+}
+function closeCart() {
+document.getElementById('cartModalOverlay').classList.remove('active');
+document.body.style.overflow = '';
+}
+function openCartOrder() {
+closeCart();
+if (cart.length > 0) {
+const firstItem = cart[0];
+openOrderModal(firstItem.id, firstItem.name, firstItem.price, firstItem.image, '');
+}
+}
+
+// ===== ORDER MODAL =====
+let currentOrder = { id: '', name: '', price: 0, image: '', color: 'Jigarrang', material: 'Yog'och', qty: 1 };
+function openOrderModal(id, name, price, image, category) {
+currentOrder = { id, name, price, image, color: 'Jigarrang', material: 'Yog'och', qty: 1 };
+document.getElementById('orderImg').src = image;
+document.getElementById('orderImg').alt = name;
+document.getElementById('orderName').textContent = name;
+document.getElementById('orderPrice').textContent = price.toLocaleString() + ' so'm';
+document.getElementById('orderQty').textContent = '1';
+document.getElementById('sizeL').value = '200';
+document.getElementById('sizeW').value = '100';
+document.getElementById('sizeH').value = '80';
+document.getElementById('custName').value = '';
+document.getElementById('custPhone').value = '';
+document.getElementById('custAddress').value = '';
+document.getElementById('custNote').value = '';
+document.querySelectorAll('#colorOptions .option-btn').forEach((b, i) => b.classList.toggle('selected', i === 0));
+document.querySelectorAll('#materialOptions .option-btn').forEach((b, i) => b.classList.toggle('selected', i === 0));
+document.getElementById('orderModalOverlay').classList.add('active');
+document.body.style.overflow = 'hidden';
+}
+function closeOrderModal() {
+document.getElementById('orderModalOverlay').classList.remove('active');
+document.body.style.overflow = '';
+}
+function selectOption(btn, type) {
+const parent = btn.parentElement;
+parent.querySelectorAll('.option-btn').forEach(b => b.classList.remove('selected'));
+btn.classList.add('selected');
+if (type === 'color') currentOrder.color = btn.textContent;
+if (type === 'material') currentOrder.material = btn.textContent;
+}
+function changeQty(delta) {
+currentOrder.qty = Math.max(1, currentOrder.qty + delta);
+document.getElementById('orderQty').textContent = currentOrder.qty;
+}
+
+// ===== SUBMIT ORDER =====
+function submitOrder() {
+const name = document.getElementById('custName').value.trim();
+const phone = document.getElementById('custPhone').value.trim();
+const address = document.getElementById('custAddress').value.trim();
+const note = document.getElementById('custNote').value.trim();
+const sizeL = document.getElementById('sizeL').value;
+const sizeW = document.getElementById('sizeW').value;
+const sizeH = document.getElementById('sizeH').value;
+
+if (!name || !phone) {
+alert('Iltimos, ismingiz va telefon raqamingizni kiriting!');
+return;
+}
+
+const orderData = {
+product: currentOrder.name,
+price: currentOrder.price,
+color: currentOrder.color,
+material: currentOrder.material,
+size: sizeL + 'x' + sizeW + 'x' + sizeH + ' sm',
+qty: currentOrder.qty,
+customer: name,
+phone: phone,
+address: address,
+note: note,
+total: (currentOrder.price * currentOrder.qty).toLocaleString() + ' so'm',
+date: new Date().toLocaleString('uz-UZ')
+};
+
+// Show admin notification
+const notif = document.getElementById('adminNotif');
+notif.classList.add('show');
+setTimeout(() => notif.classList.remove('show'), 5000);
+
+// Log order (in real app, send to server)
+console.log('=== YANGI BUYURTMA ===');
+console.log(JSON.stringify(orderData, null, 2));
+
+// Show success
+alert('Buyurtmangiz qabul qilindi! Tez orada siz bilan bog'lanamiz.\n\nMahsulot: ' + currentOrder.name + '\nRang: ' + currentOrder.color + '\nMaterial: ' + currentOrder.material + '\nO'lcham: ' + orderData.size + '\nMiqdor: ' + currentOrder.qty + ' ta\nJami: ' + orderData.total);
+
+closeOrderModal();
+}
+
+function showNotification(msg) {
+const div = document.createElement('div');
+div.style.cssText = 'position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:var(--primary);color:white;padding:1rem 2rem;border-radius:50px;z-index:4000;animation:fadeInUp 0.5s ease;font-weight:600;box-shadow:0 10px 30px rgba(0,0,0,0.2)';
+div.textContent = msg;
+document.body.appendChild(div);
+setTimeout(() => { div.style.animation = 'fadeInUp 0.5s ease reverse'; setTimeout(() => div.remove(), 500); }, 2000);
+}
+
+// ===== SCROLL ANIMATIONS =====
+window.addEventListener('scroll', function() {
+const navbar = document.getElementById('navbar');
+if (window.scrollY > 50) { navbar.style.boxShadow = '0 4px 20px rgba(0,0,0,0.1)'; }
+else { navbar.style.boxShadow = 'none'; }
+/* reveal elements are always visible now */
+});
+
+// ===== SMOOTH SCROLL =====
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function(e) {
+e.preventDefault();
+const target = document.querySelector(this.getAttribute('href'));
+if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});
+});
+
+function toggleMenu() {
+document.getElementById('navLinks').classList.toggle('active');
+}
+
+// All reveal elements are visible by default now
 </script>
-    </script>
 </body>
 </html>
